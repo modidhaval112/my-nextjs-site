@@ -9,6 +9,9 @@ export default function Practice() {
   const [testProgress, setTestProgress] = useState<{ [key: number]: number }>(
     {}
   );
+  const [showAlert, setShowAlert] = useState(false);
+  const [selectedTest, setSelectedTest] = useState<number | null>(null);
+  const [lastQuestion, setLastQuestion] = useState<number>(1);
 
   // Load progress from localStorage on mount
   useEffect(() => {
@@ -18,14 +21,52 @@ export default function Practice() {
     }
   }, []);
 
-  // Function to update last visited question
+  // Function to handle test click
   const handleClick = (testNumber: number) => {
-    const lastQuestion = testProgress[testNumber] || 1; // Default to question 1
-    localStorage.setItem(
-      "practiceTestProgress",
-      JSON.stringify({ ...testProgress, [testNumber]: lastQuestion })
-    );
-    setTestProgress((prev) => ({ ...prev, [testNumber]: lastQuestion }));
+    const isStarted = testProgress[testNumber] !== undefined;
+
+    if (isStarted) {
+      // If the test is in progress, show the alert and set the last visited question
+      setSelectedTest(testNumber);
+      setLastQuestion(testProgress[testNumber]); // Set the last visited question
+      setShowAlert(true);
+    } else {
+      // If the test is not started, proceed to the first question
+      localStorage.setItem(
+        "practiceTestProgress",
+        JSON.stringify({ ...testProgress, [testNumber]: 1 })
+      );
+      setTestProgress((prev) => ({ ...prev, [testNumber]: 1 }));
+    }
+  };
+
+  // Function to handle "Resume" action
+  const handleResume = () => {
+    if (selectedTest !== null) {
+      setShowAlert(false);
+      // Redirect to the last visited question
+      window.location.href = `/citizenship-test/practice/${selectedTest}/question/${lastQuestion}`;
+    }
+  };
+
+  // Function to handle "Start Over" action
+  const handleStartOver = () => {
+    if (selectedTest !== null) {
+      // Reset progress for the selected test
+      const updatedProgress = { ...testProgress, [selectedTest]: 1 };
+      localStorage.setItem(
+        "practiceTestProgress",
+        JSON.stringify(updatedProgress)
+      );
+      setTestProgress(updatedProgress);
+
+      // Reset the timer to 45 minutes (2700 seconds)
+      localStorage.setItem(`test-${selectedTest}-time`, "2700");
+
+      // Redirect to the first question
+      setShowAlert(false);
+      window.location.href = `/citizenship-test/practice/${selectedTest}/question/1`;
+    }
   };
 
   return (
@@ -39,10 +80,9 @@ export default function Practice() {
           const isStarted = testProgress[testNumber] !== undefined;
 
           return (
-            <Link
+            <div
               key={testNumber}
-              href={`/citizenship-test/practice/${testNumber}/question/${lastQuestion}`}
-              className="relative bg-white p-4 rounded-lg shadow-md border border-gray-300 flex flex-col justify-between h-32"
+              className="relative bg-white p-4 rounded-lg shadow-md border border-gray-300 flex flex-col justify-between h-32 cursor-pointer"
               onClick={() => handleClick(testNumber)}
             >
               {/* Top Left Corner: 20 Questions */}
@@ -75,10 +115,34 @@ export default function Practice() {
                   <FaPlay />
                 )}
               </div>
-            </Link>
+            </div>
           );
         })}
       </div>
+
+      {/* Alert Modal */}
+      {showAlert && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+            <h2 className="text-xl font-bold mb-4">Test In Progress</h2>
+            <p className="mb-4">Would you like to resume or start over?</p>
+            <div className="flex gap-4 justify-center">
+              <button
+                className="px-4 py-2 bg-blue-500 text-white rounded-md"
+                onClick={handleResume}
+              >
+                Resume
+              </button>
+              <button
+                className="px-4 py-2 bg-red-500 text-white rounded-md"
+                onClick={handleStartOver}
+              >
+                Start Over
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

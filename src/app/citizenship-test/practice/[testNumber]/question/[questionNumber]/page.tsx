@@ -76,6 +76,7 @@ export default function QuestionPage({
 
   const handleSubmit = () => {
     setSubmitted(true);
+    setTimeLeft(45 * 60);
     // Clear timer and answers from localStorage after submission
     localStorage.removeItem(`test-${testNumber}-answers`);
     localStorage.removeItem(`test-${testNumber}-time`);

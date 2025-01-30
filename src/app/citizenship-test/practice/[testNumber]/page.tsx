@@ -4,8 +4,15 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { getQuestionsForTest } from "@/utils/getQuestions";
 
-// Define the props structure with params directly available
-const PracticeTestPage = ({ params }: { params: { testNumber: string } }) => {
+// Define the type for the params object
+interface PageProps {
+  params: {
+    testNumber: string;
+  };
+}
+
+// Component receives `params` from Next.js routing system
+const PracticeTestPage = ({ params }: PageProps) => {
   const testNumberInt = parseInt(params.testNumber, 10);
 
   // Fetch questions dynamically based on testNumber

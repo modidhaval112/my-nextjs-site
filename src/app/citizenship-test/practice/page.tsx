@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { FaPlay, FaPause } from "react-icons/fa";
 
 export default function Practice() {
@@ -76,7 +75,6 @@ export default function Practice() {
       {/* Grid Layout */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {Array.from({ length: 20 }, (_, i) => i + 1).map((testNumber) => {
-          const lastQuestion = testProgress[testNumber] || 1;
           const isStarted = testProgress[testNumber] !== undefined;
 
           return (

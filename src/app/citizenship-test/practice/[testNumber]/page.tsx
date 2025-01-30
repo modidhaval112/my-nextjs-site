@@ -1,19 +1,12 @@
 "use client";
 
-// pages/citizenship-test/practice/[testNumber]/page.tsx
-
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { getQuestionsForTest } from "@/utils/getQuestions";
 
-// Define types for the props
-interface PracticeTestPageProps {
-  params: { testNumber: string };
-}
-
-const PracticeTestPage = ({ params }: PracticeTestPageProps) => {
-  const { testNumber } = params;
-  const testNumberInt = parseInt(testNumber, 10);
+// Define the props structure with params directly available
+const PracticeTestPage = ({ params }: { params: { testNumber: string } }) => {
+  const testNumberInt = parseInt(params.testNumber, 10);
 
   // Fetch questions dynamically based on testNumber
   const questions = getQuestionsForTest(testNumberInt);

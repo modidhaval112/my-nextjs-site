@@ -1,4 +1,5 @@
 // pages/citizenship-test/practice/[testNumber]/index.tsx
+"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";

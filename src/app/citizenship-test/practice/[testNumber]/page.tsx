@@ -1,68 +1,50 @@
-"use client";
+// pages/citizenship-test/practice/[testNumber]/index.tsx
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { GetServerSideProps } from "next";
 import { getQuestionsForTest } from "@/utils/getQuestions";
 
-export default function PracticeTestPage({
-  params,
-}: {
-  params: { testNumber: string };
-}) {
-  const testNumber = parseInt(params.testNumber, 10);
-  const questions = getQuestionsForTest(testNumber);
+// Define types for the props
+interface PracticeTestPageProps {
+  testNumber: string;
+}
+
+const PracticeTestPage = ({ testNumber }: PracticeTestPageProps) => {
+  const testNumberInt = parseInt(testNumber, 10);
+  const questions = getQuestionsForTest(testNumberInt);
   const [showAlert, setShowAlert] = useState(false);
   const [lastQuestionNumber, setLastQuestionNumber] = useState(1);
 
   // Check if the test is in progress on component mount
   useEffect(() => {
-    console.log(
-      `Checking localStorage for test-${testNumber}-answers and test-${testNumber}-time`
-    );
-
-    const savedAnswers = localStorage.getItem(`test-${testNumber}-answers`);
-    const savedTime = localStorage.getItem(`test-${testNumber}-time`);
-
-    console.log("Saved Answers:", savedAnswers);
-    console.log("Saved Time:", savedTime);
+    const savedAnswers = localStorage.getItem(`test-${testNumberInt}-answers`);
+    const savedTime = localStorage.getItem(`test-${testNumberInt}-time`);
 
     if (savedAnswers || savedTime) {
-      // Test is in progress, show alert
       setShowAlert(true);
-
-      // Find the last answered question
       const answers = savedAnswers ? JSON.parse(savedAnswers) : {};
       const lastAnsweredQuestion = Math.max(
         ...Object.keys(answers).map((key) => parseInt(key, 10))
       );
       setLastQuestionNumber(lastAnsweredQuestion || 1);
-
-      console.log("Last Answered Question:", lastAnsweredQuestion);
-    } else {
-      console.log("No saved progress found. Starting fresh.");
     }
-  }, [testNumber]);
+  }, [testNumberInt]);
 
-  // Handle "Resume" button click
   const handleResume = () => {
     setShowAlert(false);
-    // Navigate to the last answered question
-    window.location.href = `/citizenship-test/practice/${testNumber}/question/${lastQuestionNumber}`;
+    window.location.href = `/citizenship-test/practice/${testNumberInt}/question/${lastQuestionNumber}`;
   };
 
-  // Handle "Start Over" button click
   const handleStartOver = () => {
-    // Clear saved progress and timer
-    localStorage.removeItem(`test-${testNumber}-answers`);
-    localStorage.removeItem(`test-${testNumber}-time`);
+    localStorage.removeItem(`test-${testNumberInt}-answers`);
+    localStorage.removeItem(`test-${testNumberInt}-time`);
     setShowAlert(false);
-    // Navigate to the first question
-    window.location.href = `/citizenship-test/practice/${testNumber}/question/1`;
+    window.location.href = `/citizenship-test/practice/${testNumberInt}/question/1`;
   };
 
   return (
     <div>
-      {/* Alert Box */}
       {showAlert && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
@@ -86,12 +68,12 @@ export default function PracticeTestPage({
         </div>
       )}
 
-      <h1 className="text-2xl font-bold mb-4">Practice Test {testNumber}</h1>
+      <h1 className="text-2xl font-bold mb-4">Practice Test {testNumberInt}</h1>
       <ul className="space-y-2">
         {questions.map((q, index) => (
           <li key={q.id} className="border p-4 rounded-md">
             <Link
-              href={`/citizenship-test/practice/${testNumber}/question/${
+              href={`/citizenship-test/practice/${testNumberInt}/question/${
                 index + 1
               }`}
             >
@@ -102,4 +84,18 @@ export default function PracticeTestPage({
       </ul>
     </div>
   );
-}
+};
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const { testNumber } = context.params as { testNumber: string };
+
+  // You can also fetch other dynamic data here based on `testNumber` if necessary
+
+  return {
+    props: {
+      testNumber,
+    },
+  };
+};
+
+export default PracticeTestPage;

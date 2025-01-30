@@ -1,18 +1,21 @@
-// pages/citizenship-test/practice/[testNumber]/index.tsx
 "use client";
+
+// pages/citizenship-test/practice/[testNumber]/page.tsx
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { GetServerSideProps } from "next";
 import { getQuestionsForTest } from "@/utils/getQuestions";
 
 // Define types for the props
 interface PracticeTestPageProps {
-  testNumber: string;
+  params: { testNumber: string };
 }
 
-const PracticeTestPage = ({ testNumber }: PracticeTestPageProps) => {
+const PracticeTestPage = ({ params }: PracticeTestPageProps) => {
+  const { testNumber } = params;
   const testNumberInt = parseInt(testNumber, 10);
+
+  // Fetch questions dynamically based on testNumber
   const questions = getQuestionsForTest(testNumberInt);
   const [showAlert, setShowAlert] = useState(false);
   const [lastQuestionNumber, setLastQuestionNumber] = useState(1);
@@ -85,18 +88,6 @@ const PracticeTestPage = ({ testNumber }: PracticeTestPageProps) => {
       </ul>
     </div>
   );
-};
-
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { testNumber } = context.params as { testNumber: string };
-
-  // You can also fetch other dynamic data here based on `testNumber` if necessary
-
-  return {
-    props: {
-      testNumber,
-    },
-  };
 };
 
 export default PracticeTestPage;

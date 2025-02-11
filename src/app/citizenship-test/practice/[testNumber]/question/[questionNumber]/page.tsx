@@ -17,7 +17,6 @@ export default function QuestionPage({
 
   const questions = getQuestionsForTest(testNumber);
 
-  // Load answers and timer from localStorage on component mount
   const [answers, setAnswers] = useState<{ [key: number]: string | null }>(
     () => {
       const savedAnswers = localStorage.getItem(`test-${testNumber}-answers`);
@@ -30,9 +29,8 @@ export default function QuestionPage({
     return savedTime ? parseInt(savedTime, 10) : 45 * 60; // 45 minutes in seconds
   });
 
-  const [submitted, setSubmitted] = useState(false);
+  const [showWarning, setShowWarning] = useState(false); // State to show warning
 
-  // Save answers and timer to localStorage whenever they change
   useEffect(() => {
     localStorage.setItem(`test-${testNumber}-answers`, JSON.stringify(answers));
   }, [answers, testNumber]);
@@ -41,7 +39,6 @@ export default function QuestionPage({
     localStorage.setItem(`test-${testNumber}-time`, timeLeft.toString());
   }, [timeLeft, testNumber]);
 
-  // Timer logic
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
@@ -75,18 +72,27 @@ export default function QuestionPage({
   };
 
   const handleSubmit = () => {
-    setSubmitted(true);
+    const allAnswered = Object.keys(answers).length === 20;
+    if (!allAnswered) {
+      setShowWarning(true); // Show warning if not all questions are answered
+      return;
+    }
+
     setTimeLeft(45 * 60);
-    // Clear timer and answers from localStorage after submission
-    localStorage.removeItem(`test-${testNumber}-answers`);
-    localStorage.removeItem(`test-${testNumber}-time`);
+
+    const correctAnswersCount = Object.keys(answers).filter(
+      (key) => answers[parseInt(key)] === questions[parseInt(key) - 1].answer
+    ).length;
+
+    localStorage.setItem(
+      `test-${testNumber}-submitted-answers`,
+      JSON.stringify(answers)
+    );
+
+    router.push(
+      `/citizenship-test/practice/${testNumber}/result?score=${correctAnswersCount}`
+    );
   };
-
-  const correctAnswersCount = Object.keys(answers).filter(
-    (key) => answers[parseInt(key)] === questions[parseInt(key) - 1].answer
-  ).length;
-
-  const isPassed = correctAnswersCount >= 15;
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
@@ -94,119 +100,120 @@ export default function QuestionPage({
     return `${mins}:${secs < 10 ? "0" : ""}${secs}`;
   };
 
+  const handleProgressClick = (questionNum: number) => {
+    router.push(
+      `/citizenship-test/practice/${testNumber}/question/${questionNum}`
+    );
+  };
+
+  const allAnswered = Object.keys(answers).length === 20; // Check if all questions are answered
+
   return (
     <div className="p-6 flex gap-6">
-      {submitted ? (
-        <div className="text-center w-full">
-          <h1 className="text-2xl font-bold">
-            {isPassed ? "✅ You Passed!" : "❌ You Failed"}
-          </h1>
-          <p className="mt-2">You got {correctAnswersCount} / 20 correct.</p>
+      <div className="w-3/4">
+        <div className="mt-6">
+          <h1 className="text-lg font-bold">{question.question}</h1>
+          <ul className="mt-4 space-y-2">
+            {question.options.map((option, index) => {
+              const isCorrect = option === question.answer;
+              const isSelected = answers[questionNumber] === option;
+
+              let backgroundColor = "bg-white";
+              if (isSelected) {
+                backgroundColor = isCorrect ? "bg-green-300" : "bg-red-300";
+              } else if (answers[questionNumber] && isCorrect) {
+                backgroundColor = "bg-green-300";
+              }
+
+              return (
+                <li
+                  key={index}
+                  className={`p-2 border rounded-md cursor-pointer ${backgroundColor}`}
+                  onClick={() => handleAnswerSelect(option)}
+                >
+                  {option}
+                </li>
+              );
+            })}
+          </ul>
         </div>
-      ) : (
-        <>
-          {/* Left Section: Question + Options */}
-          <div className="w-3/4">
-            <div className="mt-6">
-              <h1 className="text-lg font-bold">{question.question}</h1>
 
-              <ul className="mt-4 space-y-2">
-                {question.options.map((option, index) => {
-                  const isCorrect = option === question.answer;
-                  const isSelected = answers[questionNumber] === option;
+        {/* Warning Message */}
+        {showWarning && (
+          <div className="mt-4 text-red-500">
+            Warning: You have to answer all questions to finish the test.
+          </div>
+        )}
 
-                  // Determine the background color based on selection and correctness
-                  let backgroundColor = "bg-white"; // Default background
-                  if (isSelected) {
-                    backgroundColor = isCorrect ? "bg-green-300" : "bg-red-300";
-                  } else if (answers[questionNumber] && isCorrect) {
-                    // Highlight correct answer if the user selected a wrong answer
-                    backgroundColor = "bg-green-300";
-                  }
+        <div className="mt-4 flex justify-between">
+          <button
+            className="px-4 py-2 bg-gray-300 rounded-md disabled:opacity-50"
+            disabled={questionNumber === 1}
+            onClick={() => handleNavigation(false)}
+          >
+            Prev
+          </button>
 
-                  return (
-                    <li
-                      key={index}
-                      className={`p-2 border rounded-md cursor-pointer ${backgroundColor}`}
-                      onClick={() => handleAnswerSelect(option)}
-                    >
-                      {option}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
+          {questionNumber === 20 ? (
+            <button
+              className={`px-4 py-2 ${
+                allAnswered ? "bg-green-500" : "bg-gray-400"
+              } text-white rounded-md`}
+              onClick={handleSubmit}
+              disabled={!allAnswered} // Disable submit button if not all questions are answered
+            >
+              Submit
+            </button>
+          ) : (
+            <button
+              className="px-4 py-2 bg-blue-500 text-white rounded-md"
+              onClick={() => handleNavigation(true)}
+            >
+              Next
+            </button>
+          )}
+        </div>
+      </div>
 
-            {/* Navigation Buttons */}
-            <div className="mt-4 flex justify-between">
-              <button
-                className="px-4 py-2 bg-gray-300 rounded-md disabled:opacity-50"
-                disabled={questionNumber === 1}
-                onClick={() => handleNavigation(false)}
+      <div className="w-1/4 flex flex-col items-center">
+        <h2 className="font-bold text-lg">Practice Test {testNumber}</h2>
+        <div className="text-gray-600 mb-4">
+          ⏳ Time Left: {formatTime(timeLeft)}
+        </div>
+
+        <div className="grid grid-cols-5 gap-2">
+          {Array.from({ length: 20 }).map((_, index) => {
+            const isAnswered = answers[index + 1] !== undefined;
+            const isCorrect =
+              isAnswered && answers[index + 1] === questions[index].answer;
+            return (
+              <div
+                key={index}
+                className={`w-8 h-8 flex items-center justify-center border rounded-md cursor-pointer ${
+                  index + 1 === questionNumber
+                    ? "border-2 border-blue-500" // Highlight current question
+                    : ""
+                } ${
+                  isAnswered
+                    ? isCorrect
+                      ? "bg-green-400"
+                      : "bg-red-400"
+                    : "bg-gray-300"
+                }`}
+                onClick={() => handleProgressClick(index + 1)} // Navigate to the clicked question
               >
-                Prev
-              </button>
-
-              {questionNumber === 20 ? (
-                <button
-                  className="px-4 py-2 bg-green-500 text-white rounded-md"
-                  onClick={handleSubmit}
-                >
-                  Submit
-                </button>
-              ) : (
-                <button
-                  className="px-4 py-2 bg-blue-500 text-white rounded-md"
-                  onClick={() => handleNavigation(true)}
-                >
-                  Next
-                </button>
-              )}
-            </div>
-          </div>
-
-          {/* Right Section: Progress Indicator */}
-          <div className="w-1/4 flex flex-col items-center">
-            {/* Practice Test Number and Timer */}
-            <h2 className="font-bold text-lg">Practice Test {testNumber}</h2>
-            <div className="text-gray-600 mb-4">
-              ⏳ Time Left: {formatTime(timeLeft)}
-            </div>
-
-            <h2 className="font-bold text-lg mb-2">Progress</h2>
-
-            {/* Progress Boxes */}
-            <div className="grid grid-cols-5 gap-2">
-              {Array.from({ length: 20 }).map((_, index) => {
-                const isAnswered = answers[index + 1] !== undefined;
-                const isCorrect =
-                  isAnswered && answers[index + 1] === questions[index].answer;
-
-                return (
-                  <div
-                    key={index}
-                    className={`w-8 h-8 flex items-center justify-center border rounded-md ${
-                      isAnswered
-                        ? isCorrect
-                          ? "bg-green-400"
-                          : "bg-red-400"
-                        : "bg-gray-300"
-                    }`}
-                  >
-                    {isAnswered ? (
-                      isCorrect ? (
-                        <FaCheck color="white" />
-                      ) : (
-                        <FaTimes color="white" />
-                      )
-                    ) : null}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </>
-      )}
+                {isAnswered ? (
+                  isCorrect ? (
+                    <FaCheck color="white" />
+                  ) : (
+                    <FaTimes color="white" />
+                  )
+                ) : null}
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 }

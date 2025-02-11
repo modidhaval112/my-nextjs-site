@@ -60,6 +60,7 @@ export default function Practice() {
       setTestProgress(updatedProgress);
 
       // Reset the timer to 45 minutes (2700 seconds)
+      localStorage.removeItem(`test-${selectedTest}-answers`);
       localStorage.setItem(`test-${selectedTest}-time`, "2700");
 
       // Redirect to the first question

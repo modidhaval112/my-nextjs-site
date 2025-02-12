@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { FaPlay, FaPause } from "react-icons/fa";
+// import { FaPlay, FaPause } from "react-icons/fa";
 
 export default function Practice() {
   // State to track clicked tests and last visited questions

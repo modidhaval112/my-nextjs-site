@@ -82,7 +82,7 @@ export default function ResultPage() {
       </div>
 
       {/* Questions Section */}
-      <div className="w-full max-w-4xl">
+      <div className="w-full max-w-6xl">
         {questions.length > 0 ? (
           <div className="grid grid-cols-2 gap-6">
             {questions.map((q, index) => {

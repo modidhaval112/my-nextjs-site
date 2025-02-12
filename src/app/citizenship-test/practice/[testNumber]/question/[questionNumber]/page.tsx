@@ -52,7 +52,7 @@ export default function QuestionPage({
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  });
 
   if (questionNumber < 1 || questionNumber > questions.length) {
     return <h1 className="text-red-500 p-6">Question Not Found</h1>;

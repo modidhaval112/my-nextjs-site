@@ -2,98 +2,97 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import {
+  PanelLeft,
+  Home,
+  Pencil,
+  Search,
+  BookOpen,
+  Monitor,
+} from "lucide-react";
 
 export default function Sidebar() {
-  const [showPopup, setShowPopup] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <>
-      {/* Sidebar */}
-      <aside className="fixed top-0 left-0 h-full w-64 bg-white shadow-md border-r border-gray-300 p-4">
-        <Link href="/" className="p-2 hover:bg-gray-200 rounded">
-          My App
-        </Link>
-        {/* Home Button */}
+    <aside
+      className={`fixed top-0 left-0 h-full ${
+        collapsed ? "w-16" : "w-64"
+      } bg-white shadow-md border-r border-gray-300 p-4 transition-all duration-300`}
+    >
+      {/* Sidebar Header with Collapse Button */}
+      <div className="flex items-center justify-between">
+        {/* Always display logo in collapsed or expanded state */}
+        <div className="flex items-center space-x-2">
+          <img src="/logo.webp" alt="Logo" className="w-8 h-8" />
+          {!collapsed && (
+            <div>
+              <h1 className="font-bold text-lg">BeCitizen</h1>
+              <p className="text-sm text-gray-500">
+                Canadian Citizenship Test 2025
+              </p>
+            </div>
+          )}
+        </div>
+
+        <button
+          onClick={() => setCollapsed(!collapsed)}
+          className="text-gray-600 hover:text-gray-900 p-2"
+        >
+          <PanelLeft size={24} />
+        </button>
+      </div>
+
+      {/* Navigation Links */}
+      <nav className="mt-6 space-y-2">
         <Link
           href="/citizenship-test"
-          className="block p-3 text-lg font-bold text-blue-600 hover:bg-gray-100 rounded"
+          className="flex items-center space-x-2 p-2 rounded hover:bg-gray-100"
         >
-          Home
+          <Home size={20} />
+          {!collapsed && <span>Home</span>}
         </Link>
 
-        {/* Light Grey Separator */}
-        <div className="border-t border-gray-300 my-4"></div>
+        <h3
+          className={`text-gray-700 font-semibold ${
+            collapsed ? "hidden" : "mt-4 mb-2"
+          }`}
+        >
+          Main
+        </h3>
 
-        {/* Main Section */}
-        <h3 className="text-gray-700 font-semibold mb-2">Main</h3>
-        <nav className="flex flex-col space-y-2">
-          <Link
-            href="/citizenship-test/practice"
-            className="p-2 hover:bg-gray-200 rounded"
-          >
-            Practice
-          </Link>
-          <Link
-            href="/citizenship-test/review"
-            className="p-2 hover:bg-gray-200 rounded"
-          >
-            Review
-          </Link>
-          <Link
-            href="/citizenship-test/study"
-            className="p-2 hover:bg-gray-200 rounded"
-          >
-            Study
-          </Link>
-          <Link
-            href="/citizenship-test/simulation"
-            className="p-2 hover:bg-gray-200 rounded"
-          >
-            Simulation
-          </Link>
-        </nav>
+        <Link
+          href="/citizenship-test/practice"
+          className="flex items-center space-x-2 p-2 rounded hover:bg-gray-100"
+        >
+          <Pencil size={20} />
+          {!collapsed && <span>Practice</span>}
+        </Link>
 
-        {/* Light Grey Separator */}
-        <div className="border-t border-gray-300 my-4"></div>
+        <Link
+          href="/citizenship-test/review"
+          className="flex items-center space-x-2 p-2 rounded hover:bg-gray-100"
+        >
+          <Search size={20} />
+          {!collapsed && <span>Review</span>}
+        </Link>
 
-        {/* More Section */}
-        <h3 className="text-gray-700 font-semibold mb-2">More</h3>
-        <nav className="flex flex-col space-y-2">
-          <Link
-            href="/citizenship-test/change-log"
-            className="p-2 hover:bg-gray-200 rounded"
-          >
-            Change Log
-          </Link>
-          <button
-            onClick={() => setShowPopup(true)}
-            className="p-2 text-left hover:bg-gray-200 rounded"
-          >
-            Support
-          </button>
-        </nav>
-      </aside>
+        <Link
+          href="/citizenship-test/study"
+          className="flex items-center space-x-2 p-2 rounded hover:bg-gray-100"
+        >
+          <BookOpen size={20} />
+          {!collapsed && <span>Study</span>}
+        </Link>
 
-      {/* Popup Modal */}
-      {showPopup && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-80 relative">
-            {/* Close Button */}
-            <button
-              onClick={() => setShowPopup(false)}
-              className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
-            >
-              ✖
-            </button>
-            {/* Support Content */}
-            <p className="text-center">
-              Please send any questions or feedback to <br />
-              <strong>support@domain.ca</strong>. <br />
-              Thanks for your support!
-            </p>
-          </div>
-        </div>
-      )}
-    </>
+        <Link
+          href="/citizenship-test/simulation"
+          className="flex items-center space-x-2 p-2 rounded hover:bg-gray-100"
+        >
+          <Monitor size={20} />
+          {!collapsed && <span>Simulation</span>}
+        </Link>
+      </nav>
+    </aside>
   );
 }

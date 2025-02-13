@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams, useParams } from "next/navigation";
 import { getQuestionsForTest } from "@/utils/getQuestions";
+import { Star } from "lucide-react"; // Import the Star icons from lucide-react
 
 type AnswersType = { [key: number]: string }; // Define proper type for answers
 
@@ -16,6 +17,7 @@ export default function ResultPage() {
   >([]);
   const [answers, setAnswers] = useState<AnswersType>({}); // Explicitly type the answers object
   const [timeTaken, setTimeTaken] = useState<number>(0); // Time taken to complete the test
+  const [starredQuestions, setStarredQuestions] = useState<number[]>([]); // Array to store starred question indices
   const score = searchParams.get("score");
 
   useEffect(() => {
@@ -34,6 +36,14 @@ export default function ResultPage() {
       setTimeTaken(totalTime);
     }
 
+    // Fetch starred questions from localStorage
+    const savedStarred = localStorage.getItem(
+      `test-${testNumber}-starred-questions`
+    );
+    if (savedStarred) {
+      setStarredQuestions(JSON.parse(savedStarred) as number[]);
+    }
+
     // Fetch questions
     const questions = getQuestionsForTest(testNumber);
     setQuestions(questions);
@@ -41,6 +51,18 @@ export default function ResultPage() {
 
   const isPassed = parseInt(score || "0", 10) >= 15;
   const correctAnswersCount = parseInt(score || "0", 10);
+
+  const toggleStar = (questionId: number) => {
+    const updatedStarredQuestions = starredQuestions.includes(questionId)
+      ? starredQuestions.filter((id) => id !== questionId) // Remove from starred if already starred
+      : [...starredQuestions, questionId]; // Add to starred if not already starred
+
+    setStarredQuestions(updatedStarredQuestions);
+    localStorage.setItem(
+      `test-${testNumber}-starred-questions`,
+      JSON.stringify(updatedStarredQuestions)
+    ); // Save updated starred questions in localStorage
+  };
 
   // Format time taken (in seconds) to minutes and seconds
   const formatTime = (seconds: number) => {
@@ -88,6 +110,7 @@ export default function ResultPage() {
             {questions.map((q, index) => {
               const userAnswer = answers[index + 1];
               const isCorrect = answers[index + 1] === q.answer;
+              const isStarred = starredQuestions.includes(q.id);
 
               return (
                 <div
@@ -97,15 +120,18 @@ export default function ResultPage() {
                   }`}
                 >
                   {/* Question Header with Tick/Cross */}
-                  <div className="flex items-center">
-                    <p className="text-base-500 text-sm">{`QUESTION ${
-                      index + 1
-                    } OF 20`}</p>
-                    <div className="cursor-pointer">
-                      {isCorrect ? (
-                        <span className="text-green-500">✔️</span> // Tick for correct answer
+                  <div className="flex items-center justify-between">
+                    <p className="text-base-500 text-sm">
+                      QUESTION {index + 1} OF 20
+                    </p>
+                    <div
+                      className="cursor-pointer"
+                      onClick={() => toggleStar(q.id)} // Toggle star on click
+                    >
+                      {isStarred ? (
+                        <Star className="text-yellow-500" />
                       ) : (
-                        <span className="text-red-500">❌</span> // Cross for incorrect answer
+                        <Star className="text-gray-400" />
                       )}
                     </div>
                   </div>

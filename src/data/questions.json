@@ -9,7 +9,8 @@
       "In the part of Montreal where she was elected.",
       "Going on a vacation."
     ],
-    "answer": "In the part of Montreal where she was elected."
+    "answer": "In the part of Montreal where she was elected.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 2,
@@ -21,21 +22,24 @@
       "The Governor General proposes a law for elected officials to become the governing body.",
       "The Premiers of each province pick a party to run the government"
     ],
-    "answer": "The party with the most elected representatives is invited by the Governor General to become the party in power."
+    "answer": "The party with the most elected representatives is invited by the Governor General to become the party in power.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 3,
     "testNumber": 1,
     "question": "Approximately how many Canadians served in the First World War?",
     "options": ["7000.", "8 million.", "About 60,000.", "More than 600,000."],
-    "answer": "More than 600,000."
+    "answer": "More than 600,000.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 4,
     "testNumber": 1,
     "question": "Canada has three territories and how many provinces?",
     "options": ["13", "10", "3", "5"],
-    "answer": "10"
+    "answer": "10",
+    "chapterId": "canadas-regions"
   },
   {
     "id": 5,
@@ -47,19 +51,21 @@
       "Equal pay for equal work.",
       "Equal rights."
     ],
-    "answer": "Equality of women and men"
+    "answer": "Equality of women and men",
+    "chapterId": "the-justice-system"
   },
   {
     "id": 6,
     "testNumber": 1,
-    "question": "From where does the name “Canada” come from?",
+    "question": "From where does the name \u201cCanada\u201d come from?",
     "options": [
       "From the Inuit word meaning country.",
       "From the French word meaning joining.",
-      "From the Métis word meaning rivers.",
+      "From the M\u00e9tis word meaning rivers.",
       "From \"Kanata\", the Huron-Iroquois word for village."
     ],
-    "answer": "From \"Kanata\", the Huron-Iroquois word for village."
+    "answer": "From \"Kanata\", the Huron-Iroquois word for village.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 7,
@@ -71,7 +77,8 @@
       "Keep your property tidy.",
       "Volunteer."
     ],
-    "answer": "Volunteer."
+    "answer": "Volunteer.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 8,
@@ -83,19 +90,21 @@
       "In the Parliament of Canada.",
       "At City Hall."
     ],
-    "answer": "In the Parliament of Canada."
+    "answer": "In the Parliament of Canada.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 9,
     "testNumber": 1,
-    "question": "Give the first line of Canada’s national anthem?",
+    "question": "Give the first line of Canada\u2019s national anthem?",
     "options": [
       "O Canada! Our home and native land!",
       "O Canada! Our province and native land!",
       "O Canada! From far and wide, O Canada,",
       "O Canada! We stand on guard for thee."
     ],
-    "answer": "O Canada! Our home and native land!"
+    "answer": "O Canada! Our home and native land!",
+    "chapterId": "canadian-symbols"
   },
   {
     "id": 10,
@@ -107,7 +116,8 @@
       "Appointed by the King.",
       "Elected by the Provincial Ministers."
     ],
-    "answer": "Elected by Canadian citizens."
+    "answer": "Elected by Canadian citizens.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 11,
@@ -119,7 +129,8 @@
       "Appointed by the King.",
       "Senators are appointed by the Governor General on the advice of the Prime Minister."
     ],
-    "answer": "Senators are appointed by the Governor General on the advice of the Prime Minister."
+    "answer": "Senators are appointed by the Governor General on the advice of the Prime Minister.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 12,
@@ -131,7 +142,8 @@
       "The King must sign the bill.",
       "Approval by the Members of the Legislative Assembly."
     ],
-    "answer": "Approval by a majority in the House of Commons and Senate and finally the Governor General."
+    "answer": "Approval by a majority in the House of Commons and Senate and finally the Governor General.",
+    "chapterId": "the-justice-system"
   },
   {
     "id": 13,
@@ -143,7 +155,8 @@
       "By other Cabinet Ministers.",
       "By the Prime Minister"
     ],
-    "answer": "By the Prime Minister"
+    "answer": "By the Prime Minister",
+    "chapterId": "canadas-history"
   },
   {
     "id": 14,
@@ -155,7 +168,8 @@
       "The Governor General picks a party and a Prime Minister to run the government.",
       "Each province elects one representative to form the government. The King then chooses the Prime Minister."
     ],
-    "answer": "Ordinarily, the party with the most elected representatives becomes the party in power. The leader of this party becomes the Prime Minister."
+    "answer": "Ordinarily, the party with the most elected representatives becomes the party in power. The leader of this party becomes the Prime Minister.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 15,
@@ -167,7 +181,8 @@
       "The leader of the party with the most elected representatives becomes the Prime Minister.",
       "The MPs vote on the Prime Minister."
     ],
-    "answer": "The leader of the party with the most elected representatives becomes the Prime Minister."
+    "answer": "The leader of the party with the most elected representatives becomes the Prime Minister.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 16,
@@ -179,19 +194,21 @@
       "Yes, you can question their conduct but not their service.",
       "Yes, if you feel the need to."
     ],
-    "answer": "Yes, if you feel the need to."
+    "answer": "Yes, if you feel the need to.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 17,
     "testNumber": 1,
-    "question": "In Canada’s justice system what does “presumption of innocence” mean?",
+    "question": "In Canada\u2019s justice system what does \u201cpresumption of innocence\u201d mean?",
     "options": [
       "Everyone is guilty until proven innocent",
       "Guilt is decided by public opinion",
       "Innocence is decided by public opinion",
       "Everyone is innocent until proven guilty"
     ],
-    "answer": "Everyone is innocent until proven guilty"
+    "answer": "Everyone is innocent until proven guilty",
+    "chapterId": "the-justice-system"
   },
   {
     "id": 18,
@@ -203,14 +220,16 @@
       "The Quiet Revolution.",
       "La Francophonie."
     ],
-    "answer": "The Quiet Revolution."
+    "answer": "The Quiet Revolution.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 19,
     "testNumber": 1,
     "question": "In what industry do most Canadians work?",
     "options": ["Natural resources", "Tourism.", "Service.", "Manufacturing."],
-    "answer": "Service."
+    "answer": "Service.",
+    "chapterId": "canadas-economy"
   },
   {
     "id": 20,
@@ -222,7 +241,8 @@
       "Atlantic Canada.",
       "Northern Canada."
     ],
-    "answer": "Central Canada."
+    "answer": "Central Canada.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 21,
@@ -231,10 +251,11 @@
     "options": [
       "Conservative (Poilievre), NDP (Singh), Liberal (Trudeau), Bloc Quebecois (Blanchet), Green Party (May)",
       "Conservative (Poilievre), Green (May), Liberal (Trudeau), Bloc Quebecois (Duceppe)",
-      "NDP (Mulcair), Green (May), Liberal (Rae), Bloc Quebecois (Paillé)",
+      "NDP (Mulcair), Green (May), Liberal (Rae), Bloc Quebecois (Paill\u00e9)",
       "Liberal (Ignatieff), Conservative (Ambrose), NDP (Turmel), Green (May)"
     ],
-    "answer": "Conservative (Poilievre), NDP (Singh), Liberal (Trudeau), Bloc Quebecois (Blanchet), Green Party (May)"
+    "answer": "Conservative (Poilievre), NDP (Singh), Liberal (Trudeau), Bloc Quebecois (Blanchet), Green Party (May)",
+    "chapterId": "federal-elections"
   },
   {
     "id": 22,
@@ -246,7 +267,8 @@
       "Caring for the environment, not littering, paying taxes, obeying the law, helping others, respecting others.",
       "Obeying the law, taking responsibility for oneself and one's family, helping others in the community, voting in elections, serving on a jury, protecting and enjoying our heritage and environment."
     ],
-    "answer": "Obeying the law, taking responsibility for oneself and one's family, helping others in the community, voting in elections, serving on a jury, protecting and enjoying our heritage and environment."
+    "answer": "Obeying the law, taking responsibility for oneself and one's family, helping others in the community, voting in elections, serving on a jury, protecting and enjoying our heritage and environment.",
+    "chapterId": "applying-for-citizenship"
   },
   {
     "id": 23,
@@ -258,7 +280,8 @@
       "Atlantic, Central, Prairie, West Coast, and North",
       "West, Central, East, Prairies, and Territories"
     ],
-    "answer": "Atlantic, Central, Prairie, West Coast, and North"
+    "answer": "Atlantic, Central, Prairie, West Coast, and North",
+    "chapterId": "canadas-regions"
   },
   {
     "id": 24,
@@ -270,7 +293,8 @@
       "Right to ski anywhere in Canada, Moving rights, and Right to public assembly.",
       "Right to vote, Right to speak publicly, and Security rights."
     ],
-    "answer": "Mobility rights, Multiculturalism, and Aboriginal Peoples' rights."
+    "answer": "Mobility rights, Multiculturalism, and Aboriginal Peoples' rights.",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 25,
@@ -282,7 +306,8 @@
       "Basic freedoms, and obeying laws.",
       "Aboriginal peoples' rights, and to volunteer."
     ],
-    "answer": "Freedom of conscience and religion, and Freedom of association."
+    "answer": "Freedom of conscience and religion, and Freedom of association.",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 26,
@@ -294,7 +319,8 @@
       "Canadian Charter of Rights and Freedoms and Magna Carta (the Great Charter of Freedoms).",
       "Laws passed by Parliament and English common law."
     ],
-    "answer": "Canadian Charter of Rights and Freedoms and Magna Carta (the Great Charter of Freedoms)."
+    "answer": "Canadian Charter of Rights and Freedoms and Magna Carta (the Great Charter of Freedoms).",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 27,
@@ -306,7 +332,8 @@
       "Citizenship and highways.",
       "Recycling and education."
     ],
-    "answer": "National defence and foreign policy."
+    "answer": "National defence and foreign policy.",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 28,
@@ -318,7 +345,8 @@
       "Defense and Currency",
       "Criminal Law and Interprovincial Trade"
     ],
-    "answer": "Health and Education"
+    "answer": "Health and Education",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 29,
@@ -330,26 +358,29 @@
       "June 24th, 1995",
       "March 31st, 1949"
     ],
-    "answer": "April 1st, 1999"
+    "answer": "April 1st, 1999",
+    "chapterId": "canadas-history"
   },
   {
     "id": 30,
     "testNumber": 2,
     "question": "One third of all Canadians live in which province?",
     "options": ["Quebec.", "Ontario.", "Northwest Territories.", "Manitoba."],
-    "answer": "Ontario."
+    "answer": "Ontario.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 31,
     "testNumber": 2,
-    "question": "The Canadian Coat of Arms and motto is “A Mari Usque Ad Mare.” This means:",
+    "question": "The Canadian Coat of Arms and motto is \u201cA Mari Usque Ad Mare.\u201d This means:",
     "options": [
       "From the ocean to the sea.",
       "From sea to sea.",
       "From the sea to the ends of the earth.",
       "From the water to the earth."
     ],
-    "answer": "From sea to sea."
+    "answer": "From sea to sea.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 32,
@@ -361,7 +392,8 @@
       "Doing laundry and keeping the house clean.",
       "Study hard so you can earn enough money to take a vacation."
     ],
-    "answer": "Getting a job, taking care of one's family and working hard in keeping with one's abilities."
+    "answer": "Getting a job, taking care of one's family and working hard in keeping with one's abilities.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 33,
@@ -373,7 +405,8 @@
       "Saskatchewan (Regina) and Manitoba (Winnipeg).",
       "Saskatchewan (Regina), Manitoba (Winnipeg) and Ontario (Toronto)."
     ],
-    "answer": "Alberta (Edmonton), Saskatchewan (Regina) and Manitoba (Winnipeg)."
+    "answer": "Alberta (Edmonton), Saskatchewan (Regina) and Manitoba (Winnipeg).",
+    "chapterId": "canadas-regions"
   },
   {
     "id": 34,
@@ -385,7 +418,8 @@
       "Ontario (Toronto) and Quebec (Quebec City).",
       "Saskatchewan (Regina) and Manitoba Winnipeg)."
     ],
-    "answer": "Ontario (Toronto) and Quebec (Quebec City)."
+    "answer": "Ontario (Toronto) and Quebec (Quebec City).",
+    "chapterId": "canadas-regions"
   },
   {
     "id": 35,
@@ -397,7 +431,8 @@
       "Newfoundland and Labrador (St. John's), Nova Scotia (Halifax), New Brunswick (Fredericton) and Quebec (Quebec).",
       "Nova Scotia (Halifax), New Brunswick (Fredericton), Quebec (Quebec City)and Ontario (Toronto)."
     ],
-    "answer": "Newfoundland and Labrador (St. John's), Nova Scotia (Halifax), New Brunswick (Fredericton) and Prince Edward Island (Charlottetown)."
+    "answer": "Newfoundland and Labrador (St. John's), Nova Scotia (Halifax), New Brunswick (Fredericton) and Prince Edward Island (Charlottetown).",
+    "chapterId": "canadas-regions"
   },
   {
     "id": 36,
@@ -409,7 +444,8 @@
       "Northwest Territories (Yellowknife).",
       "Yukon Territory (Whitehorse), Northwest Territories (Yellowknife), and Nunavut (Iqaluit)."
     ],
-    "answer": "Yukon Territory (Whitehorse), Northwest Territories (Yellowknife), and Nunavut (Iqaluit)."
+    "answer": "Yukon Territory (Whitehorse), Northwest Territories (Yellowknife), and Nunavut (Iqaluit).",
+    "chapterId": "canadas-regions"
   },
   {
     "id": 37,
@@ -421,19 +457,21 @@
       "Federal, Territorial and Provincial.",
       "Federal, State and Local."
     ],
-    "answer": "Federal, Provincial and Territorial, Municipal (local)."
+    "answer": "Federal, Provincial and Territorial, Municipal (local).",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 38,
     "testNumber": 2,
     "question": "What are the three main groups of Aboriginal peoples?",
     "options": [
-      "First Nations, Métis and Inuit.",
-      "Acadians, Métis and Inuit.",
-      "United Empire Loyalists, Métis and Inuit.",
-      "Inuit, Métis and Acadians."
+      "First Nations, M\u00e9tis and Inuit.",
+      "Acadians, M\u00e9tis and Inuit.",
+      "United Empire Loyalists, M\u00e9tis and Inuit.",
+      "Inuit, M\u00e9tis and Acadians."
     ],
-    "answer": "First Nations, Métis and Inuit."
+    "answer": "First Nations, M\u00e9tis and Inuit.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 39,
@@ -445,7 +483,8 @@
       "Natural resources, tourism and manufacturing.",
       "Natural resources, manufacturing and services."
     ],
-    "answer": "Natural resources, manufacturing and services."
+    "answer": "Natural resources, manufacturing and services.",
+    "chapterId": "canadas-economy"
   },
   {
     "id": 40,
@@ -457,26 +496,29 @@
       "The King, the Legislative Assembly and the Senate.",
       "The Sovereign, the House of Commons and the Senate."
     ],
-    "answer": "The Sovereign, the House of Commons and the Senate."
+    "answer": "The Sovereign, the House of Commons and the Senate.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 41,
     "testNumber": 3,
     "question": "What are the two official languages of Canada?",
     "options": [
-      "English and Métis.",
+      "English and M\u00e9tis.",
       "Inuktitut and French.",
       "English and French.",
       "English and Inuktitut."
     ],
-    "answer": "English and French."
+    "answer": "English and French.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 42,
     "testNumber": 3,
-    "question": "What country is Canada’s largest trading partner?",
+    "question": "What country is Canada\u2019s largest trading partner?",
     "options": ["Mexico.", "United States of America.", "China.", "Japan."],
-    "answer": "United States of America."
+    "answer": "United States of America.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 43,
@@ -488,7 +530,8 @@
       "Unity.",
       "Ribbons of steel."
     ],
-    "answer": "Unity."
+    "answer": "Unity.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 44,
@@ -500,26 +543,29 @@
       "They formed a republic state in Canada",
       "They were a group of politicians that tried to unite Canada to the United States"
     ],
-    "answer": "They worked together to establish a new country, the Dominion of Canada"
+    "answer": "They worked together to establish a new country, the Dominion of Canada",
+    "chapterId": "canadas-history"
   },
   {
     "id": 45,
     "testNumber": 3,
     "question": "What do you call a law before it is passed?",
     "options": ["A New law.", "A Proposed law.", "A Bill.", "A New proposal."],
-    "answer": "A Bill."
+    "answer": "A Bill.",
+    "chapterId": "the-justice-system"
   },
   {
     "id": 46,
     "testNumber": 3,
-    "question": "What do you call the Sovereign’s representative in the provinces?",
+    "question": "What do you call the Sovereign\u2019s representative in the provinces?",
     "options": [
       "Premier.",
       "Member of the Legislative Assembly.",
       "Lieutenant-Governor.",
       "Senator."
     ],
-    "answer": "Lieutenant-Governor."
+    "answer": "Lieutenant-Governor.",
+    "chapterId": "canadas-regions"
   },
   {
     "id": 47,
@@ -531,7 +577,8 @@
       "An x",
       "The voter\\'s name."
     ],
-    "answer": "An x"
+    "answer": "An x",
+    "chapterId": "federal-elections"
   },
   {
     "id": 48,
@@ -543,7 +590,8 @@
       "Joining of suburbs to form a large city.",
       "Joining of provinces to make a new country."
     ],
-    "answer": "Joining of provinces to make a new country."
+    "answer": "Joining of provinces to make a new country.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 49,
@@ -555,19 +603,21 @@
       "The Sovereign (Queen or King) represents Canadians in Parliament.",
       "The Sovereign (Queen or King) approves bills before becoming law."
     ],
-    "answer": "Canada's Head of State is a hereditary Sovereign (Queen or King) who reigns in accordance with the Constitution."
+    "answer": "Canada's Head of State is a hereditary Sovereign (Queen or King) who reigns in accordance with the Constitution.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 50,
     "testNumber": 3,
-    "question": "What does the “right to a secret ballot” mean?",
+    "question": "What does the \u201cright to a secret ballot\u201d mean?",
     "options": [
       "No one should tell you where to vote",
       "A secret vote used by politicians when they are voting on sensitive topics",
       "No one can watch your vote and no one should look at how you voted",
       "Your right to vote in secret on who to appoint to the Senate"
     ],
-    "answer": "No one can watch your vote and no one should look at how you voted"
+    "answer": "No one can watch your vote and no one should look at how you voted",
+    "chapterId": "canadas-history"
   },
   {
     "id": 51,
@@ -579,31 +629,34 @@
       "White with a red border on each end and a red maple leaf in the centre.",
       "Red with a white maple leaf."
     ],
-    "answer": "White with a red border on each end and a red maple leaf in the centre."
+    "answer": "White with a red border on each end and a red maple leaf in the centre.",
+    "chapterId": "canadian-symbols"
   },
   {
     "id": 52,
     "testNumber": 3,
-    "question": "What does the term “responsible government” mean?",
+    "question": "What does the term \u201cresponsible government\u201d mean?",
     "options": [
       "Each person in each electoral district is responsible for voting.",
       "The Governor General is responsible for the actions of the Prime Minister.",
       "The ministers of the Crown must have the support of a majority of the elected representatives in order to govern.",
       "All Canadians are responsible for each other."
     ],
-    "answer": "The ministers of the Crown must have the support of a majority of the elected representatives in order to govern."
+    "answer": "The ministers of the Crown must have the support of a majority of the elected representatives in order to govern.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 53,
     "testNumber": 3,
-    "question": "What does the word “Inuit” mean?",
+    "question": "What does the word \u201cInuit\u201d mean?",
     "options": [
       "\"Eskimo\" in Inuktitut language.",
       "\"Home\" in English.",
       "\"The people\" in the Inuktitut language.",
       "\"The Arctic Land\" in Inuktitut language."
     ],
-    "answer": "\"The people\" in the Inuktitut language."
+    "answer": "\"The people\" in the Inuktitut language.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 54,
@@ -615,7 +668,8 @@
       "The British defeated the French marking the end of France's empire in America",
       "The French defeated the British in a battle for Quebec"
     ],
-    "answer": "The British defeated the French marking the end of France's empire in America"
+    "answer": "The British defeated the French marking the end of France's empire in America",
+    "chapterId": "canadas-history"
   },
   {
     "id": 55,
@@ -627,7 +681,8 @@
       "A person who speaks French as their first language",
       "The first phone in Canada, invented by Alexander Graham Bell"
     ],
-    "answer": "A person who speaks French as their first language"
+    "answer": "A person who speaks French as their first language",
+    "chapterId": "canadas-history"
   },
   {
     "id": 56,
@@ -639,7 +694,8 @@
       "Niagara",
       "Hudson's Bay."
     ],
-    "answer": "St. Lawrence River"
+    "answer": "St. Lawrence River",
+    "chapterId": "canadas-history"
   },
   {
     "id": 57,
@@ -651,7 +707,8 @@
       "When the part in power holds at least half of the seats in the Senate.",
       "When the party in power holds at least half of the seats in the House of Commons."
     ],
-    "answer": "When the party in power holds at least half of the seats in the House of Commons."
+    "answer": "When the party in power holds at least half of the seats in the House of Commons.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 58,
@@ -663,26 +720,29 @@
       "A form that tells you when and where to vote.",
       "A form that lets you know your voting time."
     ],
-    "answer": "A form that tells you when and where to vote."
+    "answer": "A form that tells you when and where to vote.",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 59,
     "testNumber": 3,
-    "question": "What is Canada’s national winter sport?",
+    "question": "What is Canada\u2019s national winter sport?",
     "options": ["Golf.", "Nordic skiing.", "Lacrosse.", "Hockey."],
-    "answer": "Hockey."
+    "answer": "Hockey.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 60,
     "testNumber": 3,
-    "question": "What is Canada’s system of government called?",
+    "question": "What is Canada\u2019s system of government called?",
     "options": [
       "Dictatorship.",
       "Parliamentary government.",
       "Military Rule.",
       "Communism."
     ],
-    "answer": "Parliamentary government."
+    "answer": "Parliamentary government.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 61,
@@ -694,26 +754,29 @@
       "Women may now go to school and enter the professional workforce.",
       "A woman may now become Prime Minister."
     ],
-    "answer": "Men and women are equal under the law."
+    "answer": "Men and women are equal under the law.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 62,
     "testNumber": 4,
-    "question": "What is the “head tax”?",
+    "question": "What is the \u201chead tax\u201d?",
     "options": [
       "Race-based entry fee charged for Chinese entering Canada.",
       "Fee charged for anyone entering Canada after 1900.",
       "A tax imposed on beer beginning in 1867.",
       "Fee charged for moving westward in the early 1900s."
     ],
-    "answer": "Race-based entry fee charged for Chinese entering Canada."
+    "answer": "Race-based entry fee charged for Chinese entering Canada.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 63,
     "testNumber": 4,
     "question": "What is the capital city of Canada?",
     "options": ["Ottawa.", "Toronto.", "Montreal.", "Hull."],
-    "answer": "Ottawa."
+    "answer": "Ottawa.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 64,
@@ -725,14 +788,16 @@
       "The Sovereign links Canada to 52 other nations and the Prime Minister is the guardian of Constitutional freedoms.",
       "The Sovereign is the symbol of Canadian sovereignty and the Prime Minister is her aide."
     ],
-    "answer": "The Sovereign is the guardian of Constitutional freedoms, the Prime Minister selects the Cabinet ministers and is responsible for operations and policy of government."
+    "answer": "The Sovereign is the guardian of Constitutional freedoms, the Prime Minister selects the Cabinet ministers and is responsible for operations and policy of government.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 65,
     "testNumber": 4,
     "question": "What is the government of all of Canada called?",
     "options": ["National assembly.", "Legislature.", "Federal.", "Council."],
-    "answer": "Federal."
+    "answer": "Federal.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 66,
@@ -744,7 +809,8 @@
       "The Supreme Court of Canada",
       "The Crown Court of Canada"
     ],
-    "answer": "The Supreme Court of Canada"
+    "answer": "The Supreme Court of Canada",
+    "chapterId": "the-justice-system"
   },
   {
     "id": 67,
@@ -756,14 +822,16 @@
       "Order of Merit.",
       "Victoria Cross."
     ],
-    "answer": "Victoria Cross."
+    "answer": "Victoria Cross.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 68,
     "testNumber": 4,
     "question": "What is the largest religious affiliation in Canada?",
     "options": ["Catholic.", "Muslim.", "Jewish.", "Hindu."],
-    "answer": "Catholic."
+    "answer": "Catholic.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 69,
@@ -775,7 +843,8 @@
       "To honour Prime Ministers who have died.",
       "To remember the sacrifice of Canadians who have served or died in wars up to the present day."
     ],
-    "answer": "To remember the sacrifice of Canadians who have served or died in wars up to the present day."
+    "answer": "To remember the sacrifice of Canadians who have served or died in wars up to the present day.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 70,
@@ -787,7 +856,8 @@
       "Richard Wagner.",
       "Julie Payette"
     ],
-    "answer": "Mary Simon."
+    "answer": "Mary Simon.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 71,
@@ -799,7 +869,8 @@
       "Jagmeet Singh (New Democratic Party).",
       "Pierre Trudeau (Liberal Party)."
     ],
-    "answer": "Justin Trudeau (Liberal Party)."
+    "answer": "Justin Trudeau (Liberal Party).",
+    "chapterId": "canadas-history"
   },
   {
     "id": 72,
@@ -811,7 +882,8 @@
       "La Marseillaise",
       "The Star-Spangled Banner."
     ],
-    "answer": "God Save the Queen (or King)."
+    "answer": "God Save the Queen (or King).",
+    "chapterId": "canadian-symbols"
   },
   {
     "id": 73,
@@ -823,7 +895,8 @@
       "To settle disputes.",
       "To express values and beliefs of Canadians."
     ],
-    "answer": "To settle disputes."
+    "answer": "To settle disputes.",
+    "chapterId": "the-justice-system"
   },
   {
     "id": 74,
@@ -835,7 +908,8 @@
       "To oppose or try to improve government proposals.",
       "To put forward bills to be passed."
     ],
-    "answer": "To oppose or try to improve government proposals."
+    "answer": "To oppose or try to improve government proposals.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 75,
@@ -847,7 +921,8 @@
       "Discovering insulin opened the doors to more discoveries.",
       "Discovering insulin made Drs. Banting and Best famous."
     ],
-    "answer": "Insulin has saved 16 million lives worldwide."
+    "answer": "Insulin has saved 16 million lives worldwide.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 76,
@@ -859,14 +934,16 @@
       "The Canadian Charter of Freedoms.",
       "The Canadian Charter of Rights and Freedoms."
     ],
-    "answer": "The Canadian Charter of Rights and Freedoms."
+    "answer": "The Canadian Charter of Rights and Freedoms.",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 77,
     "testNumber": 4,
     "question": "What percentage of Aboriginal people are First Nations?",
     "options": ["30%.", "6%.", "50%."],
-    "answer": "The Canadian Charter of Rights and Freedoms."
+    "answer": "The Canadian Charter of Rights and Freedoms.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 78,
@@ -878,19 +955,21 @@
       "Assume you cannot vote.",
       "Call Elections Canada or visit their website."
     ],
-    "answer": "Call Elections Canada or visit their website."
+    "answer": "Call Elections Canada or visit their website.",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 79,
     "testNumber": 4,
-    "question": "What song is Canada’s national anthem?",
+    "question": "What song is Canada\u2019s national anthem?",
     "options": [
       "God Save the King.",
       "O Canada.",
       "Star Spangled Banner.",
       "Amazing Grace."
     ],
-    "answer": "O Canada."
+    "answer": "O Canada.",
+    "chapterId": "canadian-symbols"
   },
   {
     "id": 80,
@@ -902,19 +981,21 @@
       "Pacific, Indian and Atlantic.",
       "Hudson, Pacific and Atlantic."
     ],
-    "answer": "Atlantic, Arctic and Pacific."
+    "answer": "Atlantic, Arctic and Pacific.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 81,
     "testNumber": 5,
-    "question": "What was the “Underground Railroad”?",
+    "question": "What was the \u201cUnderground Railroad\u201d?",
     "options": [
       "An anti-slavery network that helped thousands of slaves escape the United States and settle in Canada",
       "A railroad through the Rockies that was mainly through mountain tunnels",
       "A network fur traders used to transport beaver pelts to the United States",
       "The first underground subway tunnel in Toronto"
     ],
-    "answer": "An anti-slavery network that helped thousands of slaves escape the United States and settle in Canada"
+    "answer": "An anti-slavery network that helped thousands of slaves escape the United States and settle in Canada",
+    "chapterId": "canadas-history"
   },
   {
     "id": 82,
@@ -926,19 +1007,21 @@
       "Canadians made a significant contribution to the defeat of Nazism and Fascism in Europe during the Second World War.",
       "It resulted in the forcible relocation of Canadians of Japanese origin."
     ],
-    "answer": "Canadians made a significant contribution to the defeat of Nazism and Fascism in Europe during the Second World War."
+    "answer": "Canadians made a significant contribution to the defeat of Nazism and Fascism in Europe during the Second World War.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 83,
     "testNumber": 5,
-    "question": "What was the Women’s Suffrage Movement?",
+    "question": "What was the Women\u2019s Suffrage Movement?",
     "options": [
       "The effort by women to achieve the right to vote.",
       "The effort by women to participate in military service.",
       "An unsuccessful movement to get husbands to do housework.",
       "The effort by women to be in Parliament."
     ],
-    "answer": "The effort by women to achieve the right to vote."
+    "answer": "The effort by women to achieve the right to vote.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 84,
@@ -950,21 +1033,24 @@
       "Promise to observe the laws of Canada.",
       "Fulfil duties as a Canadian citizen."
     ],
-    "answer": "Pledge allegiance to the King, observe the laws of Canada and fulfil the duties of a Canadian."
+    "answer": "Pledge allegiance to the King, observe the laws of Canada and fulfil the duties of a Canadian.",
+    "chapterId": "applying-for-citizenship"
   },
   {
     "id": 85,
     "testNumber": 5,
     "question": "What year did Newfoundland and Labrador join Canada?",
     "options": ["1867", "1955", "1949", "1880"],
-    "answer": "1949"
+    "answer": "1949",
+    "chapterId": "canadas-history"
   },
   {
     "id": 86,
     "testNumber": 5,
     "question": "(correct answer)",
     "options": ["1871.", "1898.", "1864."],
-    "answer": "1949"
+    "answer": "1949",
+    "chapterId": "canadas-history"
   },
   {
     "id": 87,
@@ -976,35 +1062,40 @@
       "A police officer.",
       "An Elections Canada official."
     ],
-    "answer": "No one."
+    "answer": "No one.",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 88,
     "testNumber": 5,
     "question": "When did the British North America Act come into effect?",
     "options": ["1871.", "1898."],
-    "answer": "No one."
+    "answer": "No one.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 89,
     "testNumber": 5,
     "question": "(correct answer)",
     "options": ["1905."],
-    "answer": "No one."
+    "answer": "No one.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 90,
     "testNumber": 5,
     "question": "When did the Canadian Charter of Rights and Freedoms become part of the Canadian Constitution?",
     "options": ["1867.", "1905."],
-    "answer": "No one."
+    "answer": "No one.",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 91,
     "testNumber": 5,
     "question": "(correct answer)",
     "options": ["1878."],
-    "answer": "No one."
+    "answer": "No one.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 92,
@@ -1016,14 +1107,16 @@
       "We celebrate the anniversary of Confederation July 1st of each year.",
       "May 21st of each year to remember Queen Victoria."
     ],
-    "answer": "We celebrate the anniversary of Confederation July 1st of each year."
+    "answer": "We celebrate the anniversary of Confederation July 1st of each year.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 93,
     "testNumber": 5,
     "question": "When is Remembrance Day celebrated?",
     "options": ["July 1st", "October 1st.", "November 11th.", "December 25th"],
-    "answer": "November 11th."
+    "answer": "November 11th.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 94,
@@ -1035,7 +1128,8 @@
       "Whenever the Prime Minister calls the election.",
       "When the MPs want a new Prime Minister."
     ],
-    "answer": "On the third Monday in October every four years following the most recent general election."
+    "answer": "On the third Monday in October every four years following the most recent general election.",
+    "chapterId": "federal-elections"
   },
   {
     "id": 95,
@@ -1047,7 +1141,8 @@
       "Go to the voting station, take your voter\\'s card with proof if identity, highlight your choice on the ballot and deposit it in the box.",
       "Go to the voting station with your voter\\'s card and ID, mark an X next to your chosen candidate, fold the ballot and present it to the poll officials who will tear off the ballot number and give you the ballot to deposit in the box"
     ],
-    "answer": "Go to the voting station with your voter\\'s card and ID, mark an X next to your chosen candidate, fold the ballot and present it to the poll officials who will tear off the ballot number and give you the ballot to deposit in the box"
+    "answer": "Go to the voting station with your voter\\'s card and ID, mark an X next to your chosen candidate, fold the ballot and present it to the poll officials who will tear off the ballot number and give you the ballot to deposit in the box",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 96,
@@ -1059,28 +1154,32 @@
       "Northern Quebec.",
       "Atlantic Canada."
     ],
-    "answer": "Between Ontario and the United States"
+    "answer": "Between Ontario and the United States",
+    "chapterId": "canadas-history"
   },
   {
     "id": 97,
     "testNumber": 5,
     "question": "Where are the Parliament Buildings located?",
     "options": ["Ottawa.", "Quebec City.", "Hull.", "Toronto."],
-    "answer": "Ottawa."
+    "answer": "Ottawa.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 98,
     "testNumber": 5,
     "question": "Where do most French-speaking Canadians live?",
     "options": ["Ontario.", "Nova Scotia.", "Quebec.", "Prince Edward Island."],
-    "answer": "Quebec."
+    "answer": "Quebec.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 99,
     "testNumber": 5,
-    "question": "Where does Canada rank in the world’s largest countries?",
+    "question": "Where does Canada rank in the world\u2019s largest countries?",
     "options": ["First", "Second", "Third", "Fourth"],
-    "answer": "Second"
+    "answer": "Second",
+    "chapterId": "canadas-history"
   },
   {
     "id": 100,
@@ -1092,14 +1191,16 @@
       "The Constitutional Act of 1982.",
       "The Constitutional Act of 2010."
     ],
-    "answer": "The Constitutional Act of 1791."
+    "answer": "The Constitutional Act of 1791.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 101,
     "testNumber": 6,
     "question": "Which animal is an official symbol of Canada?",
     "options": ["The moose.", "The hawk.", "The beaver.", "The deer."],
-    "answer": "The beaver."
+    "answer": "The beaver.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 102,
@@ -1111,7 +1212,8 @@
       "Mexico.",
       "Washington."
     ],
-    "answer": "United States of America."
+    "answer": "United States of America.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 103,
@@ -1123,19 +1225,21 @@
       "Liberal Party.",
       "Conservative Party."
     ],
-    "answer": "Liberal Party."
+    "answer": "Liberal Party.",
+    "chapterId": "federal-elections"
   },
   {
     "id": 104,
     "testNumber": 6,
-    "question": "Which of the following is NOT a feature of Canada’s system of government?",
+    "question": "Which of the following is NOT a feature of Canada\u2019s system of government?",
     "options": [
       "A federal state.",
       "Parliamentary democracy.",
       "Constitutional Monarchy.",
       "Dictatorship."
     ],
-    "answer": "Dictatorship."
+    "answer": "Dictatorship.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 105,
@@ -1147,7 +1251,8 @@
       "The USA invaded Canada and was defeated, which ensured that Canada would remain independent of the United States.",
       "Canada joined the United States after the war."
     ],
-    "answer": "The USA invaded Canada and was defeated, which ensured that Canada would remain independent of the United States."
+    "answer": "The USA invaded Canada and was defeated, which ensured that Canada would remain independent of the United States.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 106,
@@ -1159,7 +1264,8 @@
       "The schools were welcomed by the Aboriginal people.",
       "Aboriginal language and cultural practices were mostly prohibited."
     ],
-    "answer": "The schools were welcomed by the Aboriginal people."
+    "answer": "The schools were welcomed by the Aboriginal people.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 107,
@@ -1171,7 +1277,8 @@
       "Any independent candidate.",
       "The party the Prime Minister selects."
     ],
-    "answer": "The party with the second most MPs."
+    "answer": "The party with the second most MPs.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 108,
@@ -1183,7 +1290,8 @@
       "The Independent Party.",
       "The Conservative Party."
     ],
-    "answer": "The Conservative Party."
+    "answer": "The Conservative Party.",
+    "chapterId": "federal-elections"
   },
   {
     "id": 109,
@@ -1195,7 +1303,8 @@
       "The Port of Vancouver",
       "The Port of Victoria"
     ],
-    "answer": "The Port of Vancouver"
+    "answer": "The Port of Vancouver",
+    "chapterId": "canadas-history"
   },
   {
     "id": 110,
@@ -1207,7 +1316,8 @@
       "Nunavut",
       "Nova Scotia"
     ],
-    "answer": "Newfoundland and Labrador"
+    "answer": "Newfoundland and Labrador",
+    "chapterId": "canadas-history"
   },
   {
     "id": 111,
@@ -1219,14 +1329,16 @@
       "Yukon Territory.",
       "Newfoundland and Labrador."
     ],
-    "answer": "Prince Edward Island."
+    "answer": "Prince Edward Island.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 112,
     "testNumber": 6,
     "question": "Which province is the main producer of pulp and paper and hydro-electricity?",
     "options": ["Quebec", "Ontario", "British Columbia", "Manitoba"],
-    "answer": "Quebec"
+    "answer": "Quebec",
+    "chapterId": "canadas-history"
   },
   {
     "id": 113,
@@ -1238,7 +1350,8 @@
       "Ontario.",
       "Prince Edward Island."
     ],
-    "answer": "New Brunswick."
+    "answer": "New Brunswick.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 114,
@@ -1250,21 +1363,24 @@
       "Upper Canada",
       "The Province of Canada"
     ],
-    "answer": "The Province of Canada"
+    "answer": "The Province of Canada",
+    "chapterId": "canadas-history"
   },
   {
     "id": 115,
     "testNumber": 6,
     "question": "Which province was the first to grant voting rights to women?",
     "options": ["Quebec", "Ontario", "Nova Scotia", "Manitoba"],
-    "answer": "Manitoba"
+    "answer": "Manitoba",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 116,
     "testNumber": 6,
     "question": "Which provincial flag features the fleur-de-lys?",
     "options": ["Quebec", "New Brunswick", "Manitoba", "Ontario"],
-    "answer": "Quebec"
+    "answer": "Quebec",
+    "chapterId": "canadian-symbols"
   },
   {
     "id": 117,
@@ -1276,7 +1392,8 @@
       "Atlantic Canada.",
       "Northern Territories."
     ],
-    "answer": "Northern Territories."
+    "answer": "Northern Territories.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 118,
@@ -1288,7 +1405,8 @@
       "Central Canada.",
       "West Coast."
     ],
-    "answer": "Central Canada."
+    "answer": "Central Canada.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 119,
@@ -1300,7 +1418,8 @@
       "Ontario.",
       "Manitoba."
     ],
-    "answer": "Prairie provinces."
+    "answer": "Prairie provinces.",
+    "chapterId": "canadas-economy"
   },
   {
     "id": 120,
@@ -1312,7 +1431,8 @@
       "Canada, Mexico and the United States.",
       "Canada, Denmark and Andorra."
     ],
-    "answer": "Canada, Mexico and the United States."
+    "answer": "Canada, Mexico and the United States.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 121,
@@ -1324,7 +1444,8 @@
       "Saskatchewan.",
       "British Columbia."
     ],
-    "answer": "Newfoundland."
+    "answer": "Newfoundland.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 122,
@@ -1336,7 +1457,8 @@
       "The first people to live in Canada",
       "The first settlers of Newfoundland"
     ],
-    "answer": "The first people to live in Canada"
+    "answer": "The first people to live in Canada",
+    "chapterId": "canadas-history"
   },
   {
     "id": 123,
@@ -1348,31 +1470,34 @@
       "The descendants of French colonists who began settling in what are now the Maritime provinces in 1604.",
       "English speaking refugees who settled in Louisiana."
     ],
-    "answer": "The descendants of French colonists who began settling in what are now the Maritime provinces in 1604."
+    "answer": "The descendants of French colonists who began settling in what are now the Maritime provinces in 1604.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 124,
     "testNumber": 7,
     "question": "Who are the founding peoples of Canada?",
     "options": [
-      "Métis, French and British.",
-      "Aboriginal, Métis and British.",
+      "M\u00e9tis, French and British.",
+      "Aboriginal, M\u00e9tis and British.",
       "Inuit, Aboriginal and British.",
       "Aboriginal, French and British."
     ],
-    "answer": "Aboriginal, French and British."
+    "answer": "Aboriginal, French and British.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 125,
     "testNumber": 7,
-    "question": "Who are the Métis?",
+    "question": "Who are the M\u00e9tis?",
     "options": [
       "The distinct aboriginal people of Atlantic Canada.",
       "A people of mixed Inuit/First Nations ancestry most of whom live on the Prairies.",
       "First Nations people speaking the Michif dialect.",
       "A distinct people of mixed Aboriginal and European ancestry."
     ],
-    "answer": "A distinct people of mixed Aboriginal and European ancestry."
+    "answer": "A distinct people of mixed Aboriginal and European ancestry.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 126,
@@ -1384,7 +1509,8 @@
       "Descendants of the Anglophones.",
       "People of Quebec."
     ],
-    "answer": "People of Quebec."
+    "answer": "People of Quebec.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 127,
@@ -1396,7 +1522,8 @@
       "Someone to become the Premier.",
       "All of the candidates in their electoral district."
     ],
-    "answer": "A candidate they want to represent them in Parliament."
+    "answer": "A candidate they want to represent them in Parliament.",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 128,
@@ -1408,7 +1535,8 @@
       "Everyone who lives in his or her electoral district.",
       "Canadians living in the province in which he/she was elected."
     ],
-    "answer": "Everyone who lives in his or her electoral district."
+    "answer": "Everyone who lives in his or her electoral district.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 129,
@@ -1420,7 +1548,8 @@
       "Chinese railroad workers.",
       "African American slaves."
     ],
-    "answer": "Chinese railroad workers."
+    "answer": "Chinese railroad workers.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 130,
@@ -1432,7 +1561,8 @@
       "Any man who is at least 18 years old.",
       "Any Canadian citizen who is at least 18 years old."
     ],
-    "answer": "Any Canadian citizen who is at least 18 years old."
+    "answer": "Any Canadian citizen who is at least 18 years old.",
+    "chapterId": "federal-elections"
   },
   {
     "id": 131,
@@ -1444,7 +1574,8 @@
       "A landed immigrant, 18 years old and a memberof the Canadian Forces.",
       "A Canadian citizen, over 25 years and a member of the Canadian Forces."
     ],
-    "answer": "A Canadian citizen, 18 years or older, and on voters' list."
+    "answer": "A Canadian citizen, 18 years or older, and on voters' list.",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 132,
@@ -1456,38 +1587,42 @@
       "Provincial and territorial governments.",
       "Federal government."
     ],
-    "answer": "Band chiefs and councillors."
+    "answer": "Band chiefs and councillors.",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 133,
     "testNumber": 7,
-    "question": "Who is Canada’s Head of State?",
+    "question": "Who is Canada\u2019s Head of State?",
     "options": [
       "Governor General of Canada.",
       "His Majesty King Charles III.",
       "Prime Minister.",
       "Lieutenant Governor."
     ],
-    "answer": "His Majesty King Charles III."
+    "answer": "His Majesty King Charles III.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 134,
     "testNumber": 7,
     "question": "Who is considered the father of Manitoba?",
     "options": ["John A. Macdonald", "Sam Steele", "Alfred Boyd", "Louis Riel"],
-    "answer": "Louis Riel"
+    "answer": "Louis Riel",
+    "chapterId": "canadas-history"
   },
   {
     "id": 135,
     "testNumber": 7,
     "question": "Who is General Sir Arthur Currie?",
     "options": [
-      "A military leader of the Métis in the 19th century.",
+      "A military leader of the M\u00e9tis in the 19th century.",
       "A great frontier hero.",
       "An explorer of western Canada.",
       "Canada's greatest soldier in the First World War."
     ],
-    "answer": "Canada's greatest soldier in the First World War."
+    "answer": "Canada's greatest soldier in the First World War.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 136,
@@ -1499,19 +1634,21 @@
       "The Governor General",
       "The Prime Minister"
     ],
-    "answer": "The Prime Minister"
+    "answer": "The Prime Minister",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 137,
     "testNumber": 7,
-    "question": "Who is the King’s representative in Canada?",
+    "question": "Who is the King\u2019s representative in Canada?",
     "options": [
       "Prime Minister of Canada.",
       "Premier.",
       "Lieutenant-Governor.",
       "Governor General of Canada."
     ],
-    "answer": "Governor General of Canada."
+    "answer": "Governor General of Canada.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 138,
@@ -1523,7 +1660,8 @@
       "Pierre Poilievre",
       "Elizabeth May"
     ],
-    "answer": "Pierre Poilievre"
+    "answer": "Pierre Poilievre",
+    "chapterId": "federal-elections"
   },
   {
     "id": 139,
@@ -1533,9 +1671,10 @@
       "John A. Macdonald",
       "Louis Riel",
       "Sam Steele",
-      "George-Étienne Cartier"
+      "George-\u00c9tienne Cartier"
     ],
-    "answer": "Louis Riel"
+    "answer": "Louis Riel",
+    "chapterId": "canadas-history"
   },
   {
     "id": 140,
@@ -1543,11 +1682,12 @@
     "question": "Who led Quebec into Confederation?",
     "options": [
       "Sir Louis-Hippolyte La Fontaine",
-      "Sir George-Étienne Cartier",
+      "Sir George-\u00c9tienne Cartier",
       "Sir Wilfrid Laurier",
       "Sir John A. Macdonald"
     ],
-    "answer": "Sir George-Étienne Cartier"
+    "answer": "Sir George-\u00c9tienne Cartier",
+    "chapterId": "canadas-history"
   },
   {
     "id": 141,
@@ -1559,7 +1699,8 @@
       "The first Head of State.",
       "The first French speaking Prime Minister."
     ],
-    "answer": "A champion of democracy and French language rights and the first leader of a responsible government in the Canadas."
+    "answer": "A champion of democracy and French language rights and the first leader of a responsible government in the Canadas.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 142,
@@ -1567,11 +1708,12 @@
     "question": "Who was Sir Sam Steele?",
     "options": [
       "A great frontier hero, Mounted Policeman and soldier.",
-      "A military leader of the Métis in the 19th century.",
+      "A military leader of the M\u00e9tis in the 19th century.",
       "The first Prime Minister of Canada.",
       "The Father of Manitoba."
     ],
-    "answer": "A great frontier hero, Mounted Policeman and soldier."
+    "answer": "A great frontier hero, Mounted Policeman and soldier.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 143,
@@ -1583,7 +1725,8 @@
       "Louis Riel.",
       "Sir Louis-Hippolyte La Fontaine."
     ],
-    "answer": "Sir Louis-Hippolyte La Fontaine."
+    "answer": "Sir Louis-Hippolyte La Fontaine.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 144,
@@ -1595,7 +1738,8 @@
       "Lester B. Pearson.",
       "Abraham Lincoln."
     ],
-    "answer": "Sir John A. Macdonald."
+    "answer": "Sir John A. Macdonald.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 145,
@@ -1604,10 +1748,11 @@
     "options": [
       "Settlers who came to Canada from the United States during the American Revolution.",
       "Aboriginal peoples.",
-      "Métis",
+      "M\u00e9tis",
       "Inuit."
     ],
-    "answer": "Settlers who came to Canada from the United States during the American Revolution."
+    "answer": "Settlers who came to Canada from the United States during the American Revolution.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 146,
@@ -1619,7 +1764,8 @@
       "Explorers searching for the North-West Passage",
       "Geographers who first charted the coastline of British Columbia"
     ],
-    "answer": "Montreal-based traders who travelled by canoe"
+    "answer": "Montreal-based traders who travelled by canoe",
+    "chapterId": "canadas-history"
   },
   {
     "id": 147,
@@ -1631,7 +1777,8 @@
       "It was the \"hinge\" of the German line as it protected the newly constructed Hindenburg line.",
       "Once Canadians fought at Vimy they knew they would be heading home."
     ],
-    "answer": "Canadian Corps secured its reputation for valour and bravery."
+    "answer": "Canadian Corps secured its reputation for valour and bravery.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 148,
@@ -1644,7 +1791,8 @@
       "It brings in cheaper goods.",
       "Provincial Questions"
     ],
-    "answer": "It enhances our economy and raises our standard of living."
+    "answer": "It enhances our economy and raises our standard of living.",
+    "chapterId": "canadas-economy"
   },
   {
     "id": 149,
@@ -1656,7 +1804,8 @@
       "Jean-Marc Fournie",
       "Philippe Couillard"
     ],
-    "answer": "Marc Tanguay"
+    "answer": "Marc Tanguay",
+    "chapterId": "canadas-history"
   },
   {
     "id": 150,
@@ -1668,14 +1817,16 @@
       "Honourable Martial Asselin",
       "Honourable J. Michel Doyon"
     ],
-    "answer": "Honourable Manon Jeannotte"
+    "answer": "Honourable Manon Jeannotte",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 151,
     "testNumber": 8,
     "question": "What is the capital city of Alberta?",
     "options": ["Medicine Hat.", "Red Deer.", "Calgary.", "Edmonton."],
-    "answer": "Edmonton."
+    "answer": "Edmonton.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 152,
@@ -1687,7 +1838,8 @@
       "Heather Forsyth.",
       "Jim Prentice."
     ],
-    "answer": "Christina Gray"
+    "answer": "Christina Gray",
+    "chapterId": "canadas-history"
   },
   {
     "id": 153,
@@ -1699,7 +1851,8 @@
       "Adrienne Clarkson.",
       "Lois Mitchell."
     ],
-    "answer": "Salma Lakhani."
+    "answer": "Salma Lakhani.",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 154,
@@ -1711,7 +1864,8 @@
       "Premier Danielle Smith.",
       "Premier Stephen Harper"
     ],
-    "answer": "Premier Danielle Smith."
+    "answer": "Premier Danielle Smith.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 155,
@@ -1723,19 +1877,21 @@
       "Green Party.",
       "United Conservative Party"
     ],
-    "answer": "United Conservative Party"
+    "answer": "United Conservative Party",
+    "chapterId": "canadas-history"
   },
   {
     "id": 156,
     "testNumber": 8,
-    "question": "Which three natural resources are important to Alberta’s economy today?",
+    "question": "Which three natural resources are important to Alberta\u2019s economy today?",
     "options": [
       "Oil, agriculture, and forestry.",
       "Oil, tourism, and fishing.",
       "Oil, coal, and hydroelectricity.",
       "Oil, coal, and forestry."
     ],
-    "answer": "Oil, agriculture, and forestry."
+    "answer": "Oil, agriculture, and forestry.",
+    "chapterId": "canadas-economy"
   },
   {
     "id": 157,
@@ -1747,7 +1903,8 @@
       "Richmond has two federal electoral districts: Richmond and Richmond South.",
       "Richmond has two federal electoral districts: Richmond Centre and Steveston-Richmond East"
     ],
-    "answer": "Richmond has two federal electoral districts: Richmond Centre and Steveston-Richmond East"
+    "answer": "Richmond has two federal electoral districts: Richmond Centre and Steveston-Richmond East",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 158,
@@ -1759,7 +1916,8 @@
       "Wilson Miao (Liberal), Parm Bains (Liberal)",
       "Greg Halsey-Brandt (Liberal), Geoff Plant (Liberal)"
     ],
-    "answer": "Wilson Miao (Liberal), Parm Bains (Liberal)"
+    "answer": "Wilson Miao (Liberal), Parm Bains (Liberal)",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 159,
@@ -1771,7 +1929,8 @@
       "Olga Ilich (Liberal), Henry Yao (NDP), Jas Johal (Liberal), and John Yap (Liberal).",
       "Teresa Wat (Conservative Party of BC), Hon Chan (Conservative Party of BC), Kelly Greene (NDP), and Steve Kooner (Conservative Party of BC)"
     ],
-    "answer": "Teresa Wat (Conservative Party of BC), Hon Chan (Conservative Party of BC), Kelly Greene (NDP), and Steve Kooner (Conservative Party of BC)"
+    "answer": "Teresa Wat (Conservative Party of BC), Hon Chan (Conservative Party of BC), Kelly Greene (NDP), and Steve Kooner (Conservative Party of BC)",
+    "chapterId": "canadas-history"
   },
   {
     "id": 160,
@@ -1783,7 +1942,8 @@
       "Michael Wolfe, Chak Au and Carol Day",
       "Ken Johnston, Bill McNulty and Harold Steves"
     ],
-    "answer": "Michael Wolfe, Chak Au and Carol Day"
+    "answer": "Michael Wolfe, Chak Au and Carol Day",
+    "chapterId": "canadas-history"
   },
   {
     "id": 161,
@@ -1795,7 +1955,8 @@
       "Victoria.",
       "New Westminster."
     ],
-    "answer": "Victoria."
+    "answer": "Victoria.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 162,
@@ -1807,7 +1968,8 @@
       "Kevin Falcon",
       "Andrew Wilkinson"
     ],
-    "answer": "John Rustad"
+    "answer": "John Rustad",
+    "chapterId": "canadas-history"
   },
   {
     "id": 163,
@@ -1819,7 +1981,8 @@
       "Adrienne Clarkson",
       "Judith Guichon"
     ],
-    "answer": "Janet Austin"
+    "answer": "Janet Austin",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 164,
@@ -1831,7 +1994,8 @@
       "Mayor Linda McPhail",
       "Mayor Malcolm Brodie"
     ],
-    "answer": "Mayor Malcolm Brodie"
+    "answer": "Mayor Malcolm Brodie",
+    "chapterId": "canadas-history"
   },
   {
     "id": 165,
@@ -1843,7 +2007,8 @@
       "Premier John Horgan",
       "Premier Christy Clark"
     ],
-    "answer": "Premier David Eby"
+    "answer": "Premier David Eby",
+    "chapterId": "canadas-history"
   },
   {
     "id": 166,
@@ -1855,38 +2020,42 @@
       "Social Credit Party",
       "Green Party"
     ],
-    "answer": "New Democratic Party"
+    "answer": "New Democratic Party",
+    "chapterId": "canadas-history"
   },
   {
     "id": 167,
     "testNumber": 9,
-    "question": "Which three natural resources are important to British Columbia’s economy today?",
+    "question": "Which three natural resources are important to British Columbia\u2019s economy today?",
     "options": [
       "Forests, water and grain crops.",
       "Forests, fish and water.",
       "Fish, oil and water.",
       "Coal, water and shipbuilding."
     ],
-    "answer": "Forests, fish and water."
+    "answer": "Forests, fish and water.",
+    "chapterId": "canadas-economy"
   },
   {
     "id": 168,
     "testNumber": 9,
-    "question": "Why is British Columbia known as Canada’s Pacific Gateway?",
+    "question": "Why is British Columbia known as Canada\u2019s Pacific Gateway?",
     "options": [
       "Most new imigrants arrive at Vancouver International Airport.",
       "British Columbia is the closest province to the Far East.",
       "Billions of dollars in trade goods are handled through the Port of Vancouver.",
       "British Columbia borders the Pacific Ocean."
     ],
-    "answer": "Billions of dollars in trade goods are handled through the Port of Vancouver."
+    "answer": "Billions of dollars in trade goods are handled through the Port of Vancouver.",
+    "chapterId": "canadas-history"
   },
   {
     "id": 169,
     "testNumber": 9,
     "question": "What is the capital city of Manitoba?",
     "options": ["Winnipeg", "Grand Rapids", "Portage la Prairie", "Brandon"],
-    "answer": "Winnipeg"
+    "answer": "Winnipeg",
+    "chapterId": "canadas-history"
   },
   {
     "id": 170,
@@ -1898,7 +2067,8 @@
       "Wab Kinew",
       "Brian Pallister"
     ],
-    "answer": "Wayne Ewasko"
+    "answer": "Wayne Ewasko",
+    "chapterId": "canadas-history"
   },
   {
     "id": 171,
@@ -1910,7 +2080,8 @@
       "Honourable Philip Lee",
       "Honourable Janice Filmon"
     ],
-    "answer": "Honourable Anita Neville"
+    "answer": "Honourable Anita Neville",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 172,
@@ -1922,19 +2093,21 @@
       "Premier Brian Pallister",
       "Premier Sterling Lyon"
     ],
-    "answer": "Premier Wab Kinew"
+    "answer": "Premier Wab Kinew",
+    "chapterId": "canadas-history"
   },
   {
     "id": 173,
     "testNumber": 9,
-    "question": "What three industries are important to Manitoba’s economy today?",
+    "question": "What three industries are important to Manitoba\u2019s economy today?",
     "options": [
       "Farming, mining and fishing",
       "Agriculture, mining and hydro-electric power generation",
       "Fishing, tourism and mining",
       "Forestry, fishing and energy"
     ],
-    "answer": "Agriculture, mining and hydro-electric power generation"
+    "answer": "Agriculture, mining and hydro-electric power generation",
+    "chapterId": "canadas-economy"
   },
   {
     "id": 174,
@@ -1946,14 +2119,16 @@
       "Progressive Conservative",
       "New Democratic Party"
     ],
-    "answer": "New Democratic Party"
+    "answer": "New Democratic Party",
+    "chapterId": "canadas-history"
   },
   {
     "id": 175,
     "testNumber": 9,
     "question": "What is the capital city of New Brunswick?",
     "options": ["Victoria", "Winnipeg", "Fredericton", "Montreal"],
-    "answer": "Fredericton"
+    "answer": "Fredericton",
+    "chapterId": "canadas-history"
   },
   {
     "id": 176,
@@ -1965,7 +2140,8 @@
       "Susan Holt",
       "David Alward"
     ],
-    "answer": "Susan Holt"
+    "answer": "Susan Holt",
+    "chapterId": "canadas-history"
   },
   {
     "id": 177,
@@ -1977,7 +2153,8 @@
       "Honourable Marilyn Trenholme Counsell",
       "Honourable Graydon Nicholas"
     ],
-    "answer": "Honourable Brenda Murphy"
+    "answer": "Honourable Brenda Murphy",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 178,
@@ -1989,19 +2166,21 @@
       "Premier David Alward",
       "Premier Brian Gallant"
     ],
-    "answer": "Premier Blaine Higgs"
+    "answer": "Premier Blaine Higgs",
+    "chapterId": "canadas-history"
   },
   {
     "id": 179,
     "testNumber": 9,
-    "question": "What three industries are important to New Brunswick’s economy today?",
+    "question": "What three industries are important to New Brunswick\u2019s economy today?",
     "options": [
       "Forestry, hydro-electric power generation, oil",
       "Fisheries, oil, tourism",
       "Atlantic trade, fishing and oil",
       "Forestry, agriculture and mining"
     ],
-    "answer": "Forestry, agriculture and mining"
+    "answer": "Forestry, agriculture and mining",
+    "chapterId": "canadas-economy"
   },
   {
     "id": 180,
@@ -2013,7 +2192,8 @@
       "New Democrats",
       "Progressive Conservative"
     ],
-    "answer": "Progressive Conservative"
+    "answer": "Progressive Conservative",
+    "chapterId": "canadas-history"
   },
   {
     "id": 181,
@@ -2025,14 +2205,16 @@
       "St. John's",
       "St. Pierre et Miquelon"
     ],
-    "answer": "St. John's"
+    "answer": "St. John's",
+    "chapterId": "canadas-history"
   },
   {
     "id": 182,
     "testNumber": 10,
     "question": "What is the name of the leader of the Opposition in Newfoundland and Labrador?",
     "options": ["David Brazil", "Tony Wakeham", "Paul Davis", "Dwight Ball"],
-    "answer": "Tony Wakeham"
+    "answer": "Tony Wakeham",
+    "chapterId": "canadas-history"
   },
   {
     "id": 183,
@@ -2044,7 +2226,8 @@
       "Honourable Joan Marie Aylward",
       "Honourable Judy May Foote"
     ],
-    "answer": "Honourable Joan Marie Aylward"
+    "answer": "Honourable Joan Marie Aylward",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 184,
@@ -2056,19 +2239,21 @@
       "Premier Kathy Dunderdale",
       "Premier Tom Marshall"
     ],
-    "answer": "Premier Andrew Furey"
+    "answer": "Premier Andrew Furey",
+    "chapterId": "canadas-history"
   },
   {
     "id": 185,
     "testNumber": 10,
-    "question": "What three industries are important to Newfoundland and Labrador’s economy today?",
+    "question": "What three industries are important to Newfoundland and Labrador\u2019s economy today?",
     "options": [
       "Fisheries, oil and gas extraction",
       "Fisheries, tourism, forestry",
       "Shipbuilding, fisheries and mining",
       "Tourism, mining and forestry"
     ],
-    "answer": "Fisheries, oil and gas extraction"
+    "answer": "Fisheries, oil and gas extraction",
+    "chapterId": "canadas-economy"
   },
   {
     "id": 186,
@@ -2080,14 +2265,16 @@
       "Liberal Party",
       "Progressive Conservative"
     ],
-    "answer": "Liberal Party"
+    "answer": "Liberal Party",
+    "chapterId": "canadas-history"
   },
   {
     "id": 187,
     "testNumber": 10,
     "question": "What is the capital City of Nova Scotia?",
     "options": ["Shearwater", "Halifax", "Dartmouth", "Devon"],
-    "answer": "Halifax"
+    "answer": "Halifax",
+    "chapterId": "canadas-history"
   },
   {
     "id": 188,
@@ -2099,7 +2286,8 @@
       "Zach Churchill",
       "Jamie Baillie"
     ],
-    "answer": "Zach Churchill"
+    "answer": "Zach Churchill",
+    "chapterId": "canadas-history"
   },
   {
     "id": 189,
@@ -2111,7 +2299,8 @@
       "Honourable Mayann Francis",
       "Honourable Arthur J. LeBlanc"
     ],
-    "answer": "Honourable Arthur J. LeBlanc"
+    "answer": "Honourable Arthur J. LeBlanc",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 190,
@@ -2123,19 +2312,21 @@
       "Premier Tim Houston",
       "Premier Rodney MacDonald"
     ],
-    "answer": "Premier Tim Houston"
+    "answer": "Premier Tim Houston",
+    "chapterId": "canadas-history"
   },
   {
     "id": 191,
     "testNumber": 10,
-    "question": "What three industries are important to Nova Scotia’s economy today?",
+    "question": "What three industries are important to Nova Scotia\u2019s economy today?",
     "options": [
       "Fisheries, shipbuilding and forestry",
       "Forestry, mining and tourism",
       "Coal mining, forestry and agriculture",
       "Tourism, movies and shipbuilding"
     ],
-    "answer": "Coal mining, forestry and agriculture"
+    "answer": "Coal mining, forestry and agriculture",
+    "chapterId": "canadas-economy"
   },
   {
     "id": 192,
@@ -2147,14 +2338,16 @@
       "Liberal",
       "Nova Scotia Party"
     ],
-    "answer": "Progressive Conservative"
+    "answer": "Progressive Conservative",
+    "chapterId": "canadas-history"
   },
   {
     "id": 193,
     "testNumber": 10,
     "question": "What is the capital City of the Northwest Territories?",
     "options": ["Fort Simpson", "Hay River", "Fort Providence", "Yellowknife"],
-    "answer": "Yellowknife"
+    "answer": "Yellowknife",
+    "chapterId": "canadas-regions"
   },
   {
     "id": 194,
@@ -2166,14 +2359,16 @@
       "Honourable Daniel L. Norris",
       "Honourable Glenna Hansen"
     ],
-    "answer": "Honourable Gerry Kisoun"
+    "answer": "Honourable Gerry Kisoun",
+    "chapterId": "canadas-regions"
   },
   {
     "id": 195,
     "testNumber": 10,
     "question": "What is the name of the leader of the Opposition in the Northwest Territories?",
     "options": ["None", "George Braden", "Don Morin", "Nellie Cournoyea"],
-    "answer": "None"
+    "answer": "None",
+    "chapterId": "canadas-regions"
   },
   {
     "id": 196,
@@ -2185,7 +2380,8 @@
       "Premier R.J. Simpson",
       "Premier Jim Antoine"
     ],
-    "answer": "Premier R.J. Simpson"
+    "answer": "Premier R.J. Simpson",
+    "chapterId": "canadas-regions"
   },
   {
     "id": 197,
@@ -2197,14 +2393,16 @@
       "Governed by consensus",
       "New Democrats"
     ],
-    "answer": "Governed by consensus"
+    "answer": "Governed by consensus",
+    "chapterId": "canadas-regions"
   },
   {
     "id": 198,
     "testNumber": 10,
     "question": "What is the capital City of the Nunavut?",
     "options": ["Sinaa", "Iqaluit", "Nipisa", "Mivvik"],
-    "answer": "Iqaluit"
+    "answer": "Iqaluit",
+    "chapterId": "canadas-history"
   },
   {
     "id": 199,
@@ -2216,14 +2414,16 @@
       "Honourable Eva Aariak",
       "Honourable Nellie Taptaqut Kusugak"
     ],
-    "answer": "Honourable Eva Aariak"
+    "answer": "Honourable Eva Aariak",
+    "chapterId": "canadas-history"
   },
   {
     "id": 200,
     "testNumber": 10,
     "question": "What is the name of the leader of the Opposition in Nunavut?",
     "options": ["Don Morin", "Joe Handley", "None", "Eva Aariak"],
-    "answer": "None"
+    "answer": "None",
+    "chapterId": "canadas-history"
   },
   {
     "id": 201,
@@ -2235,7 +2435,8 @@
       "Premier Joe Savikataaq",
       "Premier P.J. Akeeagok"
     ],
-    "answer": "Premier P.J. Akeeagok"
+    "answer": "Premier P.J. Akeeagok",
+    "chapterId": "canadas-history"
   },
   {
     "id": 202,
@@ -2247,14 +2448,16 @@
       "Nunavut Party",
       "Governed by consensus"
     ],
-    "answer": "Governed by consensus"
+    "answer": "Governed by consensus",
+    "chapterId": "canadas-history"
   },
   {
     "id": 203,
     "testNumber": 11,
     "question": "What is the capital city of Ontario?",
     "options": ["Kingston", "Ottawa", "Toronto", "London"],
-    "answer": "Toronto"
+    "answer": "Toronto",
+    "chapterId": "canadas-history"
   },
   {
     "id": 204,
@@ -2266,7 +2469,8 @@
       "Peter Tabuns",
       "Dalton McGuinty"
     ],
-    "answer": "Marit Stiles"
+    "answer": "Marit Stiles",
+    "chapterId": "canadas-history"
   },
   {
     "id": 205,
@@ -2278,7 +2482,8 @@
       "David C. Onley",
       "Edith Dumont"
     ],
-    "answer": "Edith Dumont"
+    "answer": "Edith Dumont",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 206,
@@ -2290,19 +2495,21 @@
       "Premier Kathleen Wynne",
       "Premier Mike Harris"
     ],
-    "answer": "Premier Doug Ford"
+    "answer": "Premier Doug Ford",
+    "chapterId": "canadas-history"
   },
   {
     "id": 207,
     "testNumber": 11,
-    "question": "What three industries are important to Ontario’s economy today?",
+    "question": "What three industries are important to Ontario\u2019s economy today?",
     "options": [
       "Mining, fishing, automobile manufacturing",
       "Mining, tourism, automobile manufacturing",
       "Farming, tourism, fishing",
       "Automobile manufacturing, tourism, fishing"
     ],
-    "answer": "Mining, tourism, automobile manufacturing"
+    "answer": "Mining, tourism, automobile manufacturing",
+    "chapterId": "canadas-economy"
   },
   {
     "id": 208,
@@ -2314,21 +2521,24 @@
       "Progressive Conservative Party",
       "New Democratic Party"
     ],
-    "answer": "Progressive Conservative Party"
+    "answer": "Progressive Conservative Party",
+    "chapterId": "canadas-history"
   },
   {
     "id": 209,
     "testNumber": 11,
     "question": "What is the capital City of the Prince Edward Island?",
     "options": ["Cornwall", "Stratford", "Charlottetown", "Georgetown"],
-    "answer": "Charlottetown"
+    "answer": "Charlottetown",
+    "chapterId": "canadas-history"
   },
   {
     "id": 210,
     "testNumber": 11,
     "question": "What is the name of the leader of the Opposition in Prince Edward Island?",
     "options": ["Hal Perry", "Jamie Fox", "Steven Meyers", "Peter Bevan-Baker"],
-    "answer": "Hal Perry"
+    "answer": "Hal Perry",
+    "chapterId": "canadas-history"
   },
   {
     "id": 211,
@@ -2338,9 +2548,10 @@
       "Honourable Antoinette Perry",
       "Honourable H. Frank Lewis",
       "Honourable Barbara Oliver Hagerman",
-      "Honourable Léonce Barnard"
+      "Honourable L\u00e9once Barnard"
     ],
-    "answer": "Honourable Antoinette Perry"
+    "answer": "Honourable Antoinette Perry",
+    "chapterId": "canadas-history"
   },
   {
     "id": 212,
@@ -2352,7 +2563,8 @@
       "Premier Pat Binns",
       "Premier Joe Ghiz"
     ],
-    "answer": "Premier Dennis King"
+    "answer": "Premier Dennis King",
+    "chapterId": "canadas-history"
   },
   {
     "id": 213,
@@ -2364,14 +2576,16 @@
       "Liberals",
       "Union Nationale"
     ],
-    "answer": "Progressive Conservative"
+    "answer": "Progressive Conservative",
+    "chapterId": "canadas-history"
   },
   {
     "id": 214,
     "testNumber": 11,
     "question": "What is the capital City of the Quebec?",
     "options": ["Beauport", "Quebec City", "Montreal", "Chicoutimi"],
-    "answer": "Quebec City"
+    "answer": "Quebec City",
+    "chapterId": "canadas-history"
   },
   {
     "id": 215,
@@ -2383,45 +2597,50 @@
       "Premier Francois Legault",
       "Premier Philippe Couillard"
     ],
-    "answer": "Premier Francois Legault"
+    "answer": "Premier Francois Legault",
+    "chapterId": "canadas-history"
   },
   {
     "id": 216,
     "testNumber": 11,
-    "question": "What three industries are important to Quebec’s economy today?",
+    "question": "What three industries are important to Quebec\u2019s economy today?",
     "options": [
       "Tourism, mining and forestry",
       "Pulp and paper, forestry and hydro-electric power",
       "Films, fishing and mining",
       "Forestry, shipping and tourism"
     ],
-    "answer": "Pulp and paper, forestry and hydro-electric power"
+    "answer": "Pulp and paper, forestry and hydro-electric power",
+    "chapterId": "canadas-economy"
   },
   {
     "id": 217,
     "testNumber": 11,
     "question": "Which political party is in power in Quebec?",
     "options": [
-      "Coalition Avenir Québec",
-      "Parti libéral",
+      "Coalition Avenir Qu\u00e9bec",
+      "Parti lib\u00e9ral",
       "Parti Quebecois",
       "Union Nationale"
     ],
-    "answer": "Coalition Avenir Québec"
+    "answer": "Coalition Avenir Qu\u00e9bec",
+    "chapterId": "canadas-history"
   },
   {
     "id": 218,
     "testNumber": 11,
     "question": "What is the capital city of Saskatchewan?",
     "options": ["Regina", "Avonlea", "Glenavon", "Fort Qu'Appelle"],
-    "answer": "Regina"
+    "answer": "Regina",
+    "chapterId": "canadas-history"
   },
   {
     "id": 219,
     "testNumber": 11,
     "question": "What is the name of the leader of the Opposition in Saskatchewan?",
     "options": ["Ryan Meili", "Carla Beck", "John Nilson", "Cam Broten"],
-    "answer": "Carla Beck"
+    "answer": "Carla Beck",
+    "chapterId": "canadas-history"
   },
   {
     "id": 220,
@@ -2433,7 +2652,8 @@
       "Honourable Russ Mirasty",
       "Honourable Lynda Maureen Haverstock"
     ],
-    "answer": "Honourable Russ Mirasty"
+    "answer": "Honourable Russ Mirasty",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 221,
@@ -2445,19 +2665,21 @@
       "Premier Scott Moe",
       "Premier Len Taylor"
     ],
-    "answer": "Premier Scott Moe"
+    "answer": "Premier Scott Moe",
+    "chapterId": "canadas-history"
   },
   {
     "id": 222,
     "testNumber": 12,
-    "question": "What three industries are important to Saskatchewan’s economy today?",
+    "question": "What three industries are important to Saskatchewan\u2019s economy today?",
     "options": [
       "Forestry, films and tourism",
       "Fishing, mining and agriculture",
       "Mining, oil production and forestry",
       "Farming, mining and natural gas"
     ],
-    "answer": "Farming, mining and natural gas"
+    "answer": "Farming, mining and natural gas",
+    "chapterId": "canadas-economy"
   },
   {
     "id": 223,
@@ -2469,14 +2691,16 @@
       "Progressive Conservative",
       "Social Credit"
     ],
-    "answer": "Saskatchewan Party"
+    "answer": "Saskatchewan Party",
+    "chapterId": "canadas-history"
   },
   {
     "id": 224,
     "testNumber": 12,
     "question": "What is the capital city of Yukon Territory?",
     "options": ["MacRae", "Crestview", "Whitehorse", "Riverdale"],
-    "answer": "Whitehorse"
+    "answer": "Whitehorse",
+    "chapterId": "canadas-history"
   },
   {
     "id": 225,
@@ -2484,11 +2708,12 @@
     "question": "What is the name of the Commissioner of Yukon Territory?",
     "options": [
       "Honourable Doug Phillips",
-      "Honourable Angélique Bernard",
+      "Honourable Ang\u00e9lique Bernard",
       "Honourable Adeline Webber",
       "Honourable Douglas Bell"
     ],
-    "answer": "Honourable Adeline Webber"
+    "answer": "Honourable Adeline Webber",
+    "chapterId": "canadas-history"
   },
   {
     "id": 226,
@@ -2500,7 +2725,8 @@
       "Stacey Hassard",
       "Arthur Mitchell"
     ],
-    "answer": "Currie Dixon"
+    "answer": "Currie Dixon",
+    "chapterId": "canadas-history"
   },
   {
     "id": 227,
@@ -2512,7 +2738,8 @@
       "Premier Ranj Pillai",
       "Premier Sandy Silver"
     ],
-    "answer": "Premier Ranj Pillai"
+    "answer": "Premier Ranj Pillai",
+    "chapterId": "canadas-history"
   },
   {
     "id": 228,
@@ -2524,7 +2751,8 @@
       "Yukon Liberal Party",
       "Yukon Party"
     ],
-    "answer": "Yukon Liberal Party"
+    "answer": "Yukon Liberal Party",
+    "chapterId": "canadas-history"
   },
   {
     "id": 229,
@@ -2536,14 +2764,16 @@
       "Employment rights, mobility rights, and freedom rights",
       "Aboriginal Peoples' rights, voting rights and official language rights"
     ],
-    "answer": "Mobility rights, Aboriginal Peoples' rights, and official language rights"
+    "answer": "Mobility rights, Aboriginal Peoples' rights, and official language rights",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 230,
     "testNumber": 12,
     "question": "French and English do not have equal status in Parliament and throughout the government",
     "options": ["True", "False"],
-    "answer": "False"
+    "answer": "False",
+    "chapterId": "how-canadians-govern-themselves"
   },
   {
     "id": 231,
@@ -2555,7 +2785,8 @@
       "The military code of France",
       "English common law"
     ],
-    "answer": "English common law"
+    "answer": "English common law",
+    "chapterId": "the-justice-system"
   },
   {
     "id": 232,
@@ -2567,21 +2798,24 @@
       "The constitution of Ireland",
       "The Great Code of England."
     ],
-    "answer": "The Great Charter of Freedoms"
+    "answer": "The Great Charter of Freedoms",
+    "chapterId": "canadas-history"
   },
   {
     "id": 233,
     "testNumber": 12,
     "question": "The Great Charter of Freedoms was signed in:",
     "options": ["France", "Canada", "Ireland", "England"],
-    "answer": "England"
+    "answer": "England",
+    "chapterId": "canadas-history"
   },
   {
     "id": 234,
     "testNumber": 12,
     "question": "When was the Magna Carta signed?",
     "options": ["1615", "1425", "1215", "1649"],
-    "answer": "1215"
+    "answer": "1215",
+    "chapterId": "canadas-history"
   },
   {
     "id": 235,
@@ -2593,7 +2827,8 @@
       "Aboriginal Peoples' rights",
       "Freedom from taxes"
     ],
-    "answer": "Freedom of conscience and religion"
+    "answer": "Freedom of conscience and religion",
+    "chapterId": "canadas-history"
   },
   {
     "id": 236,
@@ -2605,14 +2840,16 @@
       "The right to speak freely",
       "The right for peaceful assembly"
     ],
-    "answer": "The right to challenge unlawful detention by the state"
+    "answer": "The right to challenge unlawful detention by the state",
+    "chapterId": "canadas-history"
   },
   {
     "id": 237,
     "testNumber": 12,
     "question": "When was the Constitution of Canada amended to include the Charter of Rights and Freedoms?",
     "options": ["1902", "1982", "1859", "1949"],
-    "answer": "1982"
+    "answer": "1982",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 238,
@@ -2624,7 +2861,8 @@
       "Queen Elizabeth II",
       "The people of Canada"
     ],
-    "answer": "Queen Elizabeth II"
+    "answer": "Queen Elizabeth II",
+    "chapterId": "canadas-history"
   },
   {
     "id": 239,
@@ -2636,7 +2874,8 @@
       "Mobility right and the rule of law",
       "The supremacy of law and the rule of God"
     ],
-    "answer": "The supremacy of God and the rule of law"
+    "answer": "The supremacy of God and the rule of law",
+    "chapterId": "canadas-history"
   },
   {
     "id": 240,
@@ -2648,7 +2887,8 @@
       "\"Whereas Canada is founded upon principles that recognize the supremacy of God and the rule of law\"",
       "\"Canadian citizens have rights and responsibilities\""
     ],
-    "answer": "\"Whereas Canada is founded upon principles that recognize the supremacy of God and the rule of law\""
+    "answer": "\"Whereas Canada is founded upon principles that recognize the supremacy of God and the rule of law\"",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 241,
@@ -2660,7 +2900,8 @@
       "Canadians can live and work anywhere they choose in Canada, enter/leave the country freely, and apply for a passport",
       "Canadians can live and work anywhere they choose in Canada, and enter/leave the country freely"
     ],
-    "answer": "Canadians can live and work anywhere they choose in Canada, enter/leave the country freely, and apply for a passport"
+    "answer": "Canadians can live and work anywhere they choose in Canada, enter/leave the country freely, and apply for a passport",
+    "chapterId": "rights-and-responsibilities"
   },
   {
     "id": 242,
@@ -2672,21 +2913,24 @@
       "British citizens",
       "Commonwealth citizens"
     ],
-    "answer": "Canadian citizens"
+    "answer": "Canadian citizens",
+    "chapterId": "canadas-history"
   },
   {
     "id": 243,
     "testNumber": 13,
     "question": "Canadians work hard to respect:",
     "options": ["Marxism", "Individualism", "Capitalism", "Pluralism"],
-    "answer": "Pluralism"
+    "answer": "Pluralism",
+    "chapterId": "canadas-history"
   },
   {
     "id": 244,
     "testNumber": 13,
     "question": "What is a fundamental characteristic of the Canadian heritage and identity?",
     "options": ["Hockey", "Maple Syrup", "Multiculturalism", "Habeas Corpus"],
-    "answer": "Multiculturalism"
+    "answer": "Multiculturalism",
+    "chapterId": "canadas-history"
   },
   {
     "id": 245,
@@ -2698,21 +2942,24 @@
       "Learning both official languages, voting in elections, and belonging to a union",
       "Buying Canadian products, owning your own house, and using less water"
     ],
-    "answer": "Obeying the law, taking responsibility for oneself and one's family, and serving on a jury"
+    "answer": "Obeying the law, taking responsibility for oneself and one's family, and serving on a jury",
+    "chapterId": "applying-for-citizenship"
   },
   {
     "id": 246,
     "testNumber": 13,
     "question": "When called to do so, serving on a jury is:",
     "options": ["A legal requirement", "An option"],
-    "answer": "A legal requirement"
+    "answer": "A legal requirement",
+    "chapterId": "canadas-history"
   },
   {
     "id": 247,
     "testNumber": 13,
     "question": "There is no compulsory military service in Canada",
     "options": ["True", "False"],
-    "answer": "True"
+    "answer": "True",
+    "chapterId": "canadas-history"
   },
   {
     "id": 248,
@@ -2724,6 +2971,7 @@
       "Belong to a union",
       "Serve in the regular Canadian Forces"
     ],
-    "answer": "Serve in the regular Canadian Forces"
+    "answer": "Serve in the regular Canadian Forces",
+    "chapterId": "canadas-history"
   }
 ]

@@ -1,0 +1,28 @@
+[
+  {
+    "chapterId": "canadas-history",
+    "notes": [
+      {
+        "subcategory": "Early History",
+        "content": "Canada's early history includes indigenous peoples and European exploration."
+      },
+      {
+        "subcategory": "Confederation",
+        "content": "Canada became a self-governing dominion in 1867."
+      }
+    ]
+  },
+  {
+    "chapterId": "modern-canada",
+    "notes": [
+      {
+        "subcategory": "Post-WWII",
+        "content": "Canada experienced significant economic growth post-WWII."
+      },
+      {
+        "subcategory": "Multiculturalism",
+        "content": "Canada embraced multiculturalism in the late 20th century."
+      }
+    ]
+  }
+]

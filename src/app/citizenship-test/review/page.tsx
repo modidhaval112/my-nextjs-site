@@ -1,13 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
 import { getQuestionsForTest } from "@/utils/getQuestions";
-import { Star, StarOff } from "lucide-react"; // Importing star icons from lucide-react
+import { Star, StarOff } from "lucide-react";
 
 type AnswersType = { [key: number]: string };
 
-// Define the structure of a question object
 type QuestionType = {
   id: number;
   question: string;
@@ -16,10 +14,7 @@ type QuestionType = {
 };
 
 export default function ReviewPage() {
-  const searchParams = useSearchParams();
-  const score = searchParams.get("score");
-
-  const [questions, setQuestions] = useState<QuestionType[]>([]); // Correct type for questions
+  const [questions, setQuestions] = useState<QuestionType[]>([]);
   const [answers, setAnswers] = useState<AnswersType>({});
   const [starredQuestions, setStarredQuestions] = useState<number[]>([]);
   const [wronglyAnsweredQuestions, setWronglyAnsweredQuestions] = useState<
@@ -30,22 +25,21 @@ export default function ReviewPage() {
   useEffect(() => {
     const storedAnswers = localStorage.getItem("test-answers");
     if (storedAnswers) {
-      setAnswers(JSON.parse(storedAnswers) as AnswersType);
+      setAnswers(JSON.parse(storedAnswers));
     }
 
     const storedStarred = localStorage.getItem("starred-questions");
     if (storedStarred) {
-      setStarredQuestions(JSON.parse(storedStarred) as number[]);
+      setStarredQuestions(JSON.parse(storedStarred));
     }
 
     const storedWrong = localStorage.getItem("wrong-answered-questions");
     if (storedWrong) {
-      setWronglyAnsweredQuestions(JSON.parse(storedWrong) as number[]);
+      setWronglyAnsweredQuestions(JSON.parse(storedWrong));
     }
 
-    // Fetch all questions across multiple tests
     const totalTests = 5;
-    let allQuestions: QuestionType[] = []; // Explicitly typed as an array of QuestionType
+    let allQuestions: QuestionType[] = [];
 
     for (let testNumber = 1; testNumber <= totalTests; testNumber++) {
       const questionsData = getQuestionsForTest(testNumber);
@@ -55,46 +49,44 @@ export default function ReviewPage() {
     setQuestions(allQuestions);
   }, []);
 
-  const toggleStar = (id: number) => {
-    const newStarredQuestions = [...starredQuestions];
-    const index = newStarredQuestions.indexOf(id);
-
-    if (index === -1) {
-      newStarredQuestions.push(id);
-    } else {
-      newStarredQuestions.splice(index, 1);
+  useEffect(() => {
+    if (starredQuestions.length > 0) {
+      localStorage.setItem(
+        "starred-questions",
+        JSON.stringify(starredQuestions)
+      );
     }
+  }, [starredQuestions]);
 
-    setStarredQuestions(newStarredQuestions);
-    localStorage.setItem(
-      "starred-questions",
-      JSON.stringify(newStarredQuestions)
-    );
+  useEffect(() => {
+    if (wronglyAnsweredQuestions.length > 0) {
+      localStorage.setItem(
+        "wrong-answered-questions",
+        JSON.stringify(wronglyAnsweredQuestions)
+      );
+    }
+  }, [wronglyAnsweredQuestions]);
+
+  const toggleStar = (id: number) => {
+    setStarredQuestions((prevStarred) => {
+      const newStarredQuestions = prevStarred.includes(id)
+        ? prevStarred.filter((qId) => qId !== id)
+        : [...prevStarred, id];
+      return newStarredQuestions;
+    });
   };
-
-  //   const formatTime = (seconds: number) => {
-  //     const mins = Math.floor(seconds / 60);
-  //     const secs = seconds % 60;
-  //     return `${mins}m ${secs}s`;
-  //   };
-
-  const isPassed = parseInt(score || "0", 10) >= 15;
 
   const renderQuestions = (questionsToShow: number[]) => {
     return questions
       .filter((q) => questionsToShow.includes(q.id))
       .map((q) => {
         const userAnswer = answers[q.id];
-        const isCorrect = userAnswer === q.answer;
         const isStarred = starredQuestions.includes(q.id);
-        //const isWrong = !isCorrect;
 
         return (
           <div
             key={q.id}
-            className={`flex flex-col p-3 rounded-md max-w-xl w-full h-full ${
-              isCorrect ? "bg-green-50" : "bg-red-50"
-            }`}
+            className={`flex flex-col p-3 rounded-md max-w-xl w-full h-full border border-zinc-200`}
           >
             <div className="flex items-center justify-between">
               <p className="text-base-500 text-sm">{`QUESTION ${q.id} OF 20`}</p>
@@ -121,7 +113,7 @@ export default function ReviewPage() {
                     ? "bg-green-600 text-white"
                     : "bg-red-600 text-white";
                 } else if (isRightAnswer) {
-                  bgColor = "bg-green-600 text-white"; // Highlight correct answer
+                  bgColor = "bg-green-600 text-white";
                 }
 
                 return (
@@ -140,17 +132,7 @@ export default function ReviewPage() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-6">
-      <div className="text-center mb-8">
-        <h1 className="text-2xl font-medium">Review Results</h1>
-        <h2 className="text-base-950 font-medium text-xl mt-2">
-          Test Result: {isPassed ? "PASS" : "FAIL"}
-        </h2>
-        <p className="text-base-700 font-normal text-sm text-center">
-          You need 15 correct answers in 45 minutes to pass the test.
-        </p>
-      </div>
-
+    <div className="flex flex-col items-center min-h-screen p-6">
       <div className="flex space-x-4 mb-8">
         <button
           className={`px-4 py-2 ${
@@ -171,8 +153,10 @@ export default function ReviewPage() {
       </div>
 
       <div className="w-full max-w-6xl">
-        {tab === "review" && renderQuestions(starredQuestions)}
-        {tab === "wrong" && renderQuestions(wronglyAnsweredQuestions)}
+        <div className="grid grid-cols-2 gap-6">
+          {tab === "review" && renderQuestions(starredQuestions)}
+          {tab === "wrong" && renderQuestions(wronglyAnsweredQuestions)}
+        </div>
       </div>
     </div>
   );

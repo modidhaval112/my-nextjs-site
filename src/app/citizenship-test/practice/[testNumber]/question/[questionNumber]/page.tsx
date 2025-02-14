@@ -84,9 +84,32 @@ export default function QuestionPage({
       (key) => answers[parseInt(key)] === questions[parseInt(key) - 1].answer
     ).length;
 
+    const wronglyAnsweredQuestions = questions
+      .map((q, index) => ({ ...q, index: index + 1 }))
+      .filter((q) => answers[q.index] !== q.answer)
+      .map((q) => q.id);
+
+    // Load existing wrongly answered questions from localStorage
+    const storedWrongQuestions = localStorage.getItem(
+      "wrong-answered-questions"
+    );
+    const existingWrongQuestions = storedWrongQuestions
+      ? JSON.parse(storedWrongQuestions)
+      : [];
+
+    // Merge new wrongly answered questions with existing ones
+    const updatedWrongQuestions = Array.from(
+      new Set([...existingWrongQuestions, ...wronglyAnsweredQuestions])
+    );
+
     localStorage.setItem(
       `test-${testNumber}-submitted-answers`,
       JSON.stringify(answers)
+    );
+
+    localStorage.setItem(
+      "wrong-answered-questions",
+      JSON.stringify(updatedWrongQuestions)
     );
 
     router.push(

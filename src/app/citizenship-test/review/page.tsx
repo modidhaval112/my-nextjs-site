@@ -38,12 +38,15 @@ export default function ReviewPage() {
       setWronglyAnsweredQuestions(JSON.parse(storedWrong));
     }
 
-    const totalTests = 5;
     let allQuestions: QuestionType[] = [];
+    let testNumber = 1;
 
-    for (let testNumber = 1; testNumber <= totalTests; testNumber++) {
+    // Dynamically determine the number of tests
+    while (true) {
       const questionsData = getQuestionsForTest(testNumber);
+      if (questionsData.length === 0) break;
       allQuestions = [...allQuestions, ...questionsData];
+      testNumber++;
     }
 
     setQuestions(allQuestions);
@@ -77,6 +80,7 @@ export default function ReviewPage() {
   };
 
   const renderQuestions = (questionsToShow: number[]) => {
+    console.log("Rendering questions:", questionsToShow); // Debug log
     return questions
       .filter((q) => questionsToShow.includes(q.id))
       .map((q) => {
@@ -89,7 +93,7 @@ export default function ReviewPage() {
             className={`flex flex-col p-3 rounded-md max-w-xl w-full h-full border border-zinc-200`}
           >
             <div className="flex items-center justify-between">
-              <p className="text-base-500 text-sm">{`QUESTION ${q.id} OF 20`}</p>
+              <p className="text-base-500 text-sm">{`QUESTION ${q.id}`}</p>
               <div className="cursor-pointer" onClick={() => toggleStar(q.id)}>
                 {isStarred ? (
                   <Star className="text-yellow-500" />
